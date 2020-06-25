@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+   Products | Jeans
+{% endblock %}
+  
+{% block content %}
+   <h1>The best jeans you can can get, period.</h1>
+   <div class="row row-cols-4" style="margin: 20px;">
+    {% for b in item %}
+       {% if b.category == 'JE' %}
+          <div class="col mb-4">
+            <div class="card h-100">
+                <img src="{{b.image_url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{b.name}}</h5>
+                  <h5>₹ {{ b.price }}</h5>
+                  <a href="{% url 'add-cart' b.id user %}" class="btn btn-outline-primary">Add To Cart</a>
+                  <a href="{% url 'product-detail' b.pk %}" class="btn btn-outline-success">Buy Now</a>
+                </div>
+              </div>
+          </div>
+       {% endif %}
+   {% endfor %}
+</div>
+   
+{% endblock %}
