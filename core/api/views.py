@@ -48,7 +48,7 @@ def productUpdate(request, pk):
 
 	if serializer.is_valid():
 		serializer.save()
-		return Response("Updated SucessfullY")
+		return Response("Updated Sucessfully")
 
 @api_view(['DELETE'])
 def productDelete(request, pk):
