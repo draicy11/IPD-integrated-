@@ -23,8 +23,6 @@ function App() {
                <Route path ='/About' component={About}/>
                <Route path ='/Cart' component={SignUp}/>
                <Route path ='/Product' component={Product}/>
-
-
           </Switch>
                  
         <Footer/>

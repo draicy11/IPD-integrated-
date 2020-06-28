@@ -5,20 +5,15 @@ const PeopleCard = (props) => {
   const {  image_url, id , name ,price}= props;
    
     return (
-      <div  className="grid">
-      <Card style={{ width: '18rem' }} key={id} className="box">
-        <Card.Img variant="top"  className="image1" src={image_url}/>
-        <Card.Body>
-          <Card.Title>{name}</Card.Title>
-            <Card.Text>
-              {price}
-            </Card.Text>
-          <Button variant="primary" >Buy now</Button>{' '}{' '}{' '}
+      <Card style={{ width: '18rem' }} key={id} className="shadow bg-white rounded m-2">
+        <Card.Img variant="top" src={image_url} style={{ height: '12rem' }}/>
+        <Card.Body className="bg-white">
+          <Card.Title className="lead">{name}</Card.Title>
+            <Card.Text>{price}</Card.Text>
+          <Button variant="primary mr-2" >Buy now</Button>
           <Button variant="success">Add to cart</Button>
         </Card.Body>
     </Card>
-    
-      </div>
     );
   }
 
