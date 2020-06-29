@@ -9,5 +9,3 @@ class ProductSerializer(serializers.ModelSerializer):
 
 
 
-
-		
