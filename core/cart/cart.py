@@ -2,17 +2,22 @@ from decimal import Decimal
 from .models import MyCart
 from django.contrib.auth.models import User
 from products.models import Product
+from ast import literal_eval
 
 def create_cart(user_name):
     customer = User.objects.get(username = user_name)
     cart = MyCart.objects.create(user = customer)
+    cart.quan_data = "{}"
+    cart.save()
 
 
-def add_to_cart(request, user_name, product_id):
+def add_to_cart(request, user_name, product_id, quan):
     customer = User.objects.get(username = user_name)
     cart = MyCart.objects.get(user = customer)
     to_add   = Product.objects.get(id = product_id)
     cart.products.add(to_add)
+    quan_dict = literal_eval(cart.qaun_data)
+    quan_dict[product_id] = quan
 
 def remove_from_cart(request, user_name, product_id):
     customer = User.objects.get(username = user_name)
@@ -23,10 +28,10 @@ def remove_from_cart(request, user_name, product_id):
 def get_total(request, user_name):
     customer = User.objects.get(username = user_name)
     cart = MyCart.objects.get(user = customer)
-    all_items = list(cart.products.all())
+    all_items = cart.products.all()
     total = 0 
-    for l1 in range(len(all_items)):
-        total += all_items[l1].price 
+    for item in all_items:
+        total += item.price
     cart.total = total
     cart.save()
 

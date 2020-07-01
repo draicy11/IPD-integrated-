@@ -6,3 +6,4 @@ class MyCart(models.Model):
     user       = models.ForeignKey(User, on_delete= models.CASCADE)
     products   = models.ManyToManyField(Product)
     total      = models.DecimalField(max_digits=10, decimal_places=2)
+    quan_data  = models.TextField()
