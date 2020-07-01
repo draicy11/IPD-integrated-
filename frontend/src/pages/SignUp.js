@@ -1,7 +1,6 @@
 import React from 'react';
-import { Form,  Input, Button, Spin } from 'antd';
+import { Form,  Input, Button } from 'antd';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
 import * as actions from '../store/actions/auth';
 
 
@@ -23,12 +22,6 @@ class SignUp extends React.Component {
 
 
   render() {
-    let errorMessage = null;
-    if (this.props.error) {
-        errorMessage = (
-            <p>{this.props.error.message}</p>
-        );
-    }
 
     return (
         <div>

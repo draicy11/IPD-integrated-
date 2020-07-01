@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Jumbotron, Card} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
 
 class About extends Component {
     render() { 

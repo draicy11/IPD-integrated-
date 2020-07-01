@@ -1,10 +1,17 @@
 import React from 'react';
 import { Form,  Input, Button, Spin } from 'antd';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+
 import * as actions from '../store/actions/auth';
 
-const FormItem = Form.Item;
+import { Container, Row, Col } from 'react-bootstrap';
+
+
+
+const layout = {
+  labelCol: { span: 8 },
+  wrapperCol: { span: 16 },
+};
 
 
 
@@ -22,63 +29,74 @@ class Login extends React.Component {
     let errorMessage = null;
     if (this.props.error) {
         errorMessage = (
-            <p>{this.props.error.message}</p>
+            <h4>{this.props.error.message}</h4>
         );
     }
 
     return (
-        <div>
-            {errorMessage}
-            {
-                this.props.loading ?
-                
-                <Spin />
-                
-                :
+          <Container style={{paddingTop: "35px"},{paddingBottom:"35px"},{paddingLeft:"5000px"},{paddingRight:"35px"}} justify-content-md-center fluid>
+            <Row  className="justify-content-md-center">
+              <Col >
+                  <div>
+                      {errorMessage}
+                      {
+                          this.props.loading ?
+                          
+                          <Spin />
+                          
+                          :
+                        <Container justify-content-center fluid>
+                          <Form style={{width: "300px"}} 
+                          {...layout}
 
-              <Form
-                name="normal_login"
-                className="login-form"
-                initialValues={{
-                  remember: true,
-                }}
-                onFinish={this.onFinish}
-              >
-                <Form.Item
-                  name="username"
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please input your Username!',
-                    },
-                  ]}
-                >
-                  <Input  placeholder="Username" />
-                </Form.Item>
-                <Form.Item
-                  name="password"
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please input your Password!',
-                    },
-                  ]}
-                >
-                  <Input
-                    type="password"
-                    placeholder="Password"
-                  />
-                </Form.Item>
-      
-                <Form.Item>
-                  <Button type="primary" htmlType="submit" className="login-form-button">
-                    Log in
-                  </Button>
-                  <br/> <a href="/signup"> Don't have an account? Sign Up </a>
-                </Form.Item>
-              </Form>
-            }
-      </div>
+                            name="normal_login"
+                            className="login-form"
+                            initialValues={{
+                              remember: true,
+                            }}
+                            onFinish={this.onFinish}
+                           
+                          >
+                            <Form.Item
+                              name="username"
+                              rules={[
+                                {
+                                  required: true,
+                                  message: 'Please input your Username!',
+                                },
+                              ]}
+                            >
+                              <Input  placeholder="Username" />
+                            </Form.Item>
+                            <Form.Item
+                              name="password"
+                              rules={[
+                                {
+                                  required: true,
+                                  message: 'Please input your Password!',
+                                },
+                              ]}
+                            >
+                              <Input
+                                type="password"
+                                placeholder="Password"
+                              />
+                            </Form.Item>
+                  
+                            <Form.Item>
+                              <Button type="primary" htmlType="submit" className="login-form-button">
+                                Log in
+                              </Button>
+                              <br/> <a href="/signup"> Don't have an account? Sign Up </a>
+                            </Form.Item>
+                          </Form>
+                        </Container>
+                      }
+                </div>
+
+              </Col>
+            </Row>
+          </Container>
     );
   }
 }
@@ -98,3 +116,5 @@ const mapDispatchToProps = dispatch => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
+
+
