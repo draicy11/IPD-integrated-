@@ -6,7 +6,7 @@ import * as actionsCart from '../store/actions/cart';
 
 const PeopleCard = (props) => {
   const {  image_url, id , name ,price}= props;
-   
+
     return (
       <Card style={{ width: '18rem' }} key={id} className="shadow bg-white rounded m-2">
         <Card.Img variant="top" src={image_url} style={{ height: '12rem' }}/>
@@ -14,7 +14,7 @@ const PeopleCard = (props) => {
           <Card.Title className="lead">{name}</Card.Title>
             <Card.Text>{price}</Card.Text>
           <Button variant="primary mr-2" >Buy now</Button>
-          <Button onClick={props.onCart} variant="success">Add to cart</Button>
+          <Button onClick={props.onCart(props.token,props.id)} variant="success">Add to cart</Button>
         </Card.Body>
     </Card>
     );
@@ -23,10 +23,16 @@ const PeopleCard = (props) => {
 
   const mapDispatchToProps = dispatch => {
     return {
-        onCart: (username , product_id ) => dispatch(actionsCart.addTo_cart(username,product_id))
+        onCart: (token , product_id ) => dispatch(actionsCart.addTo_cart(token,product_id))
          
     }
 }
+const mapStateToProps = state =>{
+  return {
+    token : state.token,
+  }
+}
 
+  export default connect(mapStateToProps, mapDispatchToProps)(PeopleCard);
 
-  export default connect(null, mapDispatchToProps)(PeopleCard);
+  //   

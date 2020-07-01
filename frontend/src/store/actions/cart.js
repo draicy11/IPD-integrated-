@@ -2,15 +2,18 @@
 import axios from 'axios';
 
 
-export const create_cart = username => {
+export const create_cart = token => {
     return dispatch => {
 
-		axios.get(`http://127.0.0.1:8000/api/cart/user/${username}`)
+		axios.get(`http://127.0.0.1:8000/api/cart/user/${token}`)
 	}
 }	
-export const addTo_cart = (username , product_id) => {
+export const addTo_cart = (token , product_id) => {
     return dispatch => {
 
-		axios.get(`http://127.0.0.1:8000/api/cart/add/${username}/${product_id}`)
+		axios.get(`http://127.0.0.1:8000/api/cart/add/${token}/${product_id}`)
+		.then(res=>{
+			console.log("sent");
+		})
 	}
 }	

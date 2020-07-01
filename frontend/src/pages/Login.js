@@ -3,7 +3,7 @@ import { Form,  Input, Button, Spin } from 'antd';
 import { connect } from 'react-redux';
 
 import * as actions from '../store/actions/auth';
-import * as actionsCart from '../store/actions/cart';
+// import * as actionsCart from '../store/actions/cart';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -20,9 +20,7 @@ class Login extends React.Component {
 
   onFinish = values => {
     console.log('Received values of form: ', values);
-    this.props.user = values.username;
     this.props.onAuth(values.username , values.password);
-    this.props.onCart(values.username);
     this.props.history.push('/');
   };
 
@@ -37,7 +35,7 @@ class Login extends React.Component {
     }
 
     return (
-          <Container style={{paddingTop: "35px"},{paddingBottom:"35px"},{paddingLeft:"5000px"},{paddingRight:"35px"}} justify-content-md-center fluid>
+          <Container fluid style={{paddingTop: "35px"},{paddingBottom:"35px"},{paddingLeft:"5000px"},{paddingRight:"35px"}} className="justify-content-md-center" >
             <Row  className="justify-content-md-center">
               <Col >
                   <div>
@@ -48,7 +46,7 @@ class Login extends React.Component {
                           <Spin />
                           
                           :
-                        <Container justify-content-center fluid>
+                        <Container className="justify-content-center" fluid>
                           <Form style={{width: "300px"}} 
                           {...layout}
 
@@ -115,7 +113,6 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch => {
     return {
         onAuth: (username, password) => dispatch(actions.authLogin(username, password)),
-        onCart: username => dispatch(actionsCart.create_cart(username))
          
     }
 }

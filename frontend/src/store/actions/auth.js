@@ -1,5 +1,6 @@
 import * as actionTypes from './actionTypes';
 import axios from 'axios';
+import * as actionCart from './cart';
 
 
 
@@ -54,12 +55,13 @@ export const authLogin = (username , password) =>{
 
 		.then(res => {
 			console.log(res);
-			const token = res.key;
+			const token = res.data.key;
 			const expirationDate = new Date(new Date().getTime() + (2 * 24 * 3600) * 1000);
 			localStorage.setItem('token' , token);
 			localStorage.setItem('expirationDate' , expirationDate);
 			dispatch(authSuccess(token));
 			dispatch(checkTimeout(2*24*3600));
+			dispatch(actionCart.create_cart(token));
 
 		})
 		.catch(err => {
