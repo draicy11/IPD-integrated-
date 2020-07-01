@@ -8,19 +8,19 @@ def create_cart(user_name):
     cart = MyCart.objects.create(user = customer)
 
 
-def add_to_cart(user_name, product_id):
+def add_to_cart(request, user_name, product_id):
     customer = User.objects.get(username = user_name)
     cart = MyCart.objects.get(user = customer)
     to_add   = Product.objects.get(id = product_id)
     cart.products.add(to_add)
 
-def remove_from_cart(user_name, product_id):
+def remove_from_cart(request, user_name, product_id):
     customer = User.objects.get(username = user_name)
     cart = MyCart.objects.get(user = customer)
     to_remove = Product.objects.get(id = product_id)
     cart.products.remove(to_remove)
 
-def get_total(user_name):
+def get_total(request, user_name):
     customer = User.objects.get(username = user_name)
     cart = MyCart.objects.get(user = customer)
     all_items = list(cart.products.all())
