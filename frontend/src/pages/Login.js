@@ -3,6 +3,7 @@ import { Form,  Input, Button, Spin } from 'antd';
 import { connect } from 'react-redux';
 
 import * as actions from '../store/actions/auth';
+import * as actionsCart from '../store/actions/cart';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -20,6 +21,7 @@ class Login extends React.Component {
   onFinish = values => {
     console.log('Received values of form: ', values);
     this.props.onAuth(values.username , values.password);
+    this.props.onCart(values.username);
     this.props.history.push('/');
   };
 
@@ -111,7 +113,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onAuth: (username, password) => dispatch(actions.authLogin(username, password)) 
+        onAuth: (username, password) => dispatch(actions.authLogin(username, password)),
+        onCart: username => dispatch(actionsCart.create_cart(username))
+         
     }
 }
 

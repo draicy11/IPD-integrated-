@@ -1,10 +1,22 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
-
+import axios from 'axios';
 
 
 class ProductDetail extends React.Component{
+
+  constructor(){
+    super()
+    // We will create the state object now. The things inside the state can change.
+    this.state = {
+        selectedValue: 'Nothing selected', 
+        data: [],
+        }
+    };
+
+
+
     render(){
         return (
         <div>
