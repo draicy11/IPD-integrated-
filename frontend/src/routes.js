@@ -18,7 +18,7 @@ const BaseRouter = () =>(
          <Route path ='/about' component={About}/>
          <Route path ='/signup' component={SignUp}/>
          <Route path ='/product' component={Product}/>
-         <Route path ='/articles/1' component={ProductDetail}/>
+         <Route path ='/articles' component={ProductDetail}/>
 </div>
 	);
 
