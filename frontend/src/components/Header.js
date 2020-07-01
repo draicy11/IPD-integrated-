@@ -27,7 +27,7 @@ class Header extends React.Component{
                     
                   this.props.isAuthenticated ?
 
-                  <a className="nav-item ml-auto" style={{color:'white'}} onClick={this.props.logout}>Log Out</a>
+                  <a className="nav-item ml-auto" style={{color:'white'}} onClick={func}>Log Out</a>
                   
                   :
                 
@@ -41,7 +41,10 @@ class Header extends React.Component{
         
     }
 }
-
+const func = () =>{
+  this.props.user = "";
+  this.props.logout();
+};
 const mapDispatchToProps = dispatch => {
   return {
     logout: () => dispatch(actions.logout())

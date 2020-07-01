@@ -20,6 +20,7 @@ class Login extends React.Component {
 
   onFinish = values => {
     console.log('Received values of form: ', values);
+    this.props.user = values.username;
     this.props.onAuth(values.username , values.password);
     this.props.onCart(values.username);
     this.props.history.push('/');

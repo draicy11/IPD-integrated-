@@ -28,6 +28,7 @@ def get_total(request, user_name):
     for l1 in range(len(all_items)):
         total += all_items[l1].price 
     cart.total = total
+    cart.save()
 
 def get_all_items(user_name):
     customer = User.objects.get(username = user_name)
