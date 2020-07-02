@@ -1,5 +1,6 @@
 import React from "react";
 import CardList from '../api/CardList';
+import './components.css'
 export default class Product extends React.Component {
 
     constructor(props){
@@ -59,8 +60,8 @@ export default class Product extends React.Component {
             <div>
                 <div className="col-md-6">
                     <form onSubmit={this.handleSubmit} >
-                        <label>
-                        filter by: 
+                        <label className="label-check">
+                        Filter By:
                         <select value={this.state.value} onChange={this.handleChange} >
                             <option value="None">All</option>
                             <option value="JE">Jeans</option>

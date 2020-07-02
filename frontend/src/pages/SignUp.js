@@ -2,7 +2,9 @@ import React from 'react';
 import { Form,  Input, Button } from 'antd';
 import { connect } from 'react-redux';
 import * as actions from '../store/actions/auth';
-
+import Avatar from '@material-ui/core/Avatar';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import './styless.css'
 
 
 
@@ -25,7 +27,9 @@ class SignUp extends React.Component {
 
     return (
         <div>
-            
+        <Avatar className="avatar1" style={{backgroundColor:"red"}}>
+        <LockOutlinedIcon />
+      </Avatar>
 
               <Form
                 name="normal_login"

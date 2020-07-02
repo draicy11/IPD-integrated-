@@ -23,7 +23,7 @@ import {Link} from 'react-router-dom';
                                         <div class="container">
                                             <h4 class="movetxt agile-title text-capitalize">We Help You Choose the Best Shoes Available In The Market. </h4>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries.</p>
-                                            <a href="contact.html" class="btn">CLICK HERE</a>					
+                                            				
                                         </div>
                                     </div>
                                 </div>
@@ -36,7 +36,7 @@ import {Link} from 'react-router-dom';
                                         <div class="container">
                                         <h2 class="movetxt agile-title text-capitalize">We Create The Best Range Shoes For the Customer</h2>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries.</p>
-                                            <a href="contact.html" class="btn"> Get appointment</a>	
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -49,7 +49,7 @@ import {Link} from 'react-router-dom';
                                         <div class="container">
                                             <h4 class="movetxt agile-title text-capitalize">We Design Latest Trending Shoes. </h4>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries.</p>
-                                            <a href="contact.html" class="btn"> Get appointment </a>			
+                                            		
                                         </div>
                                     </div>
                                 </div>
@@ -66,28 +66,7 @@ import {Link} from 'react-router-dom';
                     </div>
                 </div>
             </div>
-                <section class="content-info py-5" id="about">
-                    
-                    <h3 class="heading text-center mb-3 mb-sm-5">Best Sellers</h3>
-            
-                        <div class="container1">
-                                
-                            <div class="card">
-                                <img class="card-img-top" src="./assets/images/ser4.jpg" alt="Card image"/>
-                                <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                                <a href="#" class="btn btn-primary">Buy Now</a>{' '}{' '}
-                                <a href="#" class="btn btn-success">Add to Cart</a>
-                                </div>
-                            </div>
-
-                            
-                                
-                            
-                        </div>
-                   
-                </section>
+                
             
                 <section class="services py-5" id="services">
                     <div class="container py-md-5">
@@ -385,29 +364,7 @@ import {Link} from 'react-router-dom';
                 </section>
             
        
-            <section class="subscribe" id="subscribe">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-5 d-flex subscribe-left p-lg-5 py-sm-5 py-4">
-                            <div class="news-icon mr-3">
-                                <span class="fa fa-paper-plane" aria-hidden="true"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Get Updates<br/></h3>
-                                <h5>Sign up for Greats news and receive 20% off your first purchase</h5> 
-                            </div>
-                        </div>
-                        <div class="col-md-7 subscribe-right p-lg-5 py-sm-5 py-4">
-                            <form action="#" method="post">
-                                <input type="email" name="email" placeholder="Enter your email here" required=""/>
-                                <button  href= "./Login.js" class="btn1"><span class="fa fa-FOOC" aria-hidden="true"></span></button>
-                            </form>
-                            <p>we never share your email with anyone else</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-          
+       
                 
             </div>
          )

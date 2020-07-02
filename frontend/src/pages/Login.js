@@ -1,7 +1,9 @@
 import React from 'react';
 import { Form,  Input, Button, Spin } from 'antd';
 import { connect } from 'react-redux';
-
+import './styless.css';
+import Avatar from '@material-ui/core/Avatar';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import * as actions from '../store/actions/auth';
 // import * as actionsCart from '../store/actions/cart';
 
@@ -35,7 +37,10 @@ class Login extends React.Component {
     }
 
     return (
-          <Container fluid style={{paddingTop: "35px"},{paddingBottom:"35px"},{paddingLeft:"5000px"},{paddingRight:"35px"}} className="justify-content-md-center" >
+          <Container fluid style={{paddingTop: "25px"},{paddingBottom:"35px"},{paddingLeft:"5000px"},{paddingRight:"35px"}} className="login12" >
+                <Avatar className="avatar" style={{backgroundColor:"green"}}>
+                <LockOutlinedIcon />
+              </Avatar>
             <Row  className="justify-content-md-center">
               <Col >
                   <div>

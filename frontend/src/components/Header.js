@@ -9,13 +9,14 @@ class Header extends React.Component{
 
       
         return(
+          
             <nav className="navbar navbar-expand-lg bg-dark sticky-top ">
                 <Link to = "/"><div className="navbar-brand logo">
                         THE AUTHENTIC STORE   
                     </div>
                 </Link>
 
-                <ul className="navbar-nav">
+                <ul className="navbar-nav" >
                   <li className="nav-item active ml-2">
                     <Link to ="/">Home</Link>
                   </li>
@@ -26,21 +27,21 @@ class Header extends React.Component{
                     <Link to ="/about">About Us</Link>
                   </li>
                   <li className="nav-item ml-2">
-                    <Link to ="/Product">PRODUCTS</Link>
+                    <Link to ="/Product">Products</Link>
                   </li>
                 </ul>
                 {
                     
                   this.props.isAuthenticated ?
-                  <div>
-                  <Link to ="/login">Cart</Link>
-                  <a className="nav-item ml-auto" style={{color:'white'}} onClick={this.props.logout}>Log Out</a>
+                  <div className="nav-item ml-auto">
+                  <Link to ="/login">Cart</Link>&nbsp;&nbsp;&nbsp;
+                  <a className="nav-item ml-auto" style={{color:'lightblue'}} onClick={this.props.logout}>Log Out</a>
                   </div>
                   
                   
                   :
                 
-                  <div className="nav-item ml-auto">
+                  <div className="nav-item ml-auto" style={{color:'green'}}>
                   
                     <Link to ="/login">Sign In</Link>&nbsp;
                    
@@ -48,6 +49,7 @@ class Header extends React.Component{
                   
                 }
             </nav>
+         
         )
 
         

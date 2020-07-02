@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-
 class Footer extends React.Component{
     render(){
         return (
@@ -19,8 +18,8 @@ class Footer extends React.Component{
                                        The most Authentic outlet of shoes in India.
                                     </p>
                                 </div>
-                                <div className="col-lg-3 col-md-6 mt-lg-0 mt-5">
-                                    <div className="footer-w3pvt">
+                                <div className="align1" >
+                                    <div className="footer-w3pvt" >
                                         <h3 className="mb-3 w3pvt_title">Quick Links </h3>
                                         <hr/>
                                         <ul className="list-info-w3pvt last-w3ls-contact mt-lg-4">
@@ -43,7 +42,9 @@ class Footer extends React.Component{
                             </div>
             
                             <p className="copy-right-grids text-li text-center my-sm-4 my-4">© 2020 THE AUTHENTIC STORE. All Rights Reserved | Design by
-                                <a href="./index.html"> <br/> aman negi <br/>  mrinaal lalit  <br/> siddharth  bharmoria<br/></a>
+                            <br/>   <a href="https://github.com/draicy11">  Aman Negi</a><br/>
+                                <a href="https://github.com/mrinaal29">  Mrinaal Lalit </a><br/>
+                                <a href="https://github.com/siddharth-2001"> Siddharth  Bharmoria<br/></a><br/>
                             </p>              
                             <div className="move-top text-right"><a href="#home" className="move-top"> <span className="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
                         </div>

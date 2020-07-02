@@ -12,6 +12,7 @@ class ProductDetail extends React.Component{
     this.state = {
         selectedValue: 'Nothing selected', 
         data: [],
+        id:[]
         }
     };
 

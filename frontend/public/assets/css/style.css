@@ -68,60 +68,21 @@ ul {
 }
 
 /*-- header --*/
-.topnav{
-    padding-bottom: -30px;
-}
-a.navbar-brand {
-    float: left;
-    left:-100%;
-    font-size: 1.3em;
-    color: #ffc905;
-    padding: 0;
-    font-weight: 500;
-    margin: 0;
-    letter-spacing: 1px;
-    position: relative;
-}
-.topnav-centered ul {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
- 
-  
-  .topnav h1 {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .topnav-right {
-    float: right;
-    position: absolute;
-    top: 50%;
-    right: -120%;
-    transform: translate(-50%, -50%);
-  }
-  .topnav-right i{
-      font-size: 30px;
-      color: white;
+
+  .navbar :hover {
+    color: yellow;
+    
   }
 
-  .topnav li:hover {
-    background-color: grey;
-    color: black;
-  }
- .topnav-right span {
-    color:white;
-    font-size: 25px;
-  }
 /*-- //header --*/
-
-
+.footer-content{
+    font-style: italic;
+}
+.align1{
+    left:100%;
+    transform: translate(650%, 13%);
+   
+}
 
 /*-- banner --*/
 
@@ -483,14 +444,15 @@ nav ul {
 	padding:0;
 	margin:0;
 	list-style: none;
-	position: relative;
+    position: relative;
+    font-family: cursive;
 	}
 	
 /* Positioning the navigation items inline */
 nav ul li {
 	margin: 0px;
-	display:inline-block;
-	float: left;
+
+    font-family: cursive;
 	}
 
 /* Styling the links */
@@ -498,47 +460,54 @@ nav a,nav a:hover {
     font-weight: 600;	
     text-transform: capitalize;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-size: 17px;
     position: relative;
-    padding: 0.2rem;
+    padding: 0.1rem;
+    font-family: cursive;
 }
 
 /* Background color change on Hover */
 .menu li.active  a{ 
     color: #eee;
     background: transparent;
+    font-family: cursive;
 }
 
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 nav ul ul {
 	display: none;
-	position: absolute; 
+    position: absolute; 
+    font-family: cursive;
 	/* has to be the same number as the "line-height" of "nav a" */
-	top: 25px; 
+	top: 15px; 
     background: #fff;
     padding: 10px;
 }
 ul.inner-dropdown a:hover {
-	color: #333;
+    color: #333;
+    font-family: cursive;
 }
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
-	display:inherit;
+    display:inherit;
+    font-family: cursive;
 }
 	
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	width:160px;
+	width:100px;
 	float:none;
 	display:list-item;
-	position: relative;
+    position: relative;
+    font-family: cursive;
 }
 nav ul ul li a {
     color: #333;
     padding: 5px 10px;
     display: block;
+    font-family: cursive;
 }
 
 /* Second, Third and more Tiers	
@@ -549,7 +518,8 @@ nav ul ul ul li {
 	position: relative;
 	top:-60px;
 	/* has to be the same number as the "width" of "nav ul ul li" */ 
-	left:170px; 
+    left:170px; 
+    font-family: cursive;
 }
 
 	
@@ -709,6 +679,17 @@ li > a:only-child:after { content: ''; }
 		width: 94%;
 	}
 
+}
+/*-- changing the font of about us and visit us --*/
+.about-1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.change{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cont{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /*-- // header --*/
 h3.heading {

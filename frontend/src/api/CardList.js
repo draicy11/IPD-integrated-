@@ -22,6 +22,7 @@ const CardList = ({data}) => {
             name={data[i].name} 
             price={data[i].price}
             />
+            
             );
         })
         }
