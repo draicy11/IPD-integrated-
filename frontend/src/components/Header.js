@@ -25,18 +25,27 @@ class Header extends React.Component{
                   <li className="nav-item ml-2">
                     <Link to ="/about">About Us</Link>
                   </li>
+                  <li className="nav-item ml-2">
+                    <Link to ="/Product">PRODUCTS</Link>
+                  </li>
                 </ul>
                 {
                     
                   this.props.isAuthenticated ?
-
+                  <div>
+                  <Link to ="/login">Cart</Link>
                   <a className="nav-item ml-auto" style={{color:'white'}} onClick={this.props.logout}>Log Out</a>
+                  </div>
+                  
                   
                   :
                 
                   <div className="nav-item ml-auto">
-                    <Link to ="/login">Sign In</Link>
+                  
+                    <Link to ="/login">Sign In</Link>&nbsp;
+                   
                   </div>
+                  
                 }
             </nav>
         )
