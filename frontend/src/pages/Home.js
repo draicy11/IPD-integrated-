@@ -1,4 +1,5 @@
 import React  from 'react';
+import {Link} from 'react-router-dom';
 
  class Home extends React.Component{
      render(){
@@ -93,22 +94,31 @@ import React  from 'react';
                     <h3 class="heading text-center mb-3 mb-sm-5">Categories</h3>
                         <div class="row ab-info">
                         
-                            <div class="col-md-6 ab-content ab-content1">
+                            <div class="col-md-4 ab-content ab-content1">
                                 <div class="ab-content-inner">
-                                    <a href="single.html"><img src="./assets/images/services2.jpg" alt=" women shoe" class="img-fluid"/></a>
+                                    <a href="single.html"><img src="./assets/images/ser6.jpg" alt=" SHOES" class="img-fluid"/></a>
                                     <div class="ab-info-con">
-                                        <h4>Men's Footwear</h4>
-                                        <a href="single.html" class="read-more two btn m-0 px-3"><span class="fa fa-arrow-circle-o-right"> </span></a>
+                                        <h4>SHOES</h4>
+                                        <a href="Product" class="read-more two btn m-0 px-3"><span class="fa fa-arrow-circle-o-right"> </span></a>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="col-md-6 ab-content ab-content1">
+                            <div class="col-md-4 ab-content ab-content1">
                                 <div class="ab-content-inner">
-                                    <a href="single.html"><img src="./assets/images/services1.jpg" alt="news image" class="img-fluid"/></a>
+                                    <a href="single.html"><img src="./assets/images/ser8.jpg" alt="JACKETS" class="img-fluid"/></a>
                                     <div class="ab-info-con">
-                                        <h4>Women's Footwear</h4>
-                                        <a href="single.html" class="read-more two btn m-0 px-3"><span class="fa fa-arrow-circle-o-right"> </span></a>
+                                        <h4>APPARELS</h4>
+                                        <a href="Product" class="read-more two btn m-0 px-3"><span class="fa fa-arrow-circle-o-right"> </span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ab-content ab-content1">
+                                <div class="ab-content-inner">
+                                    <a href="single.html"><img src="./assets/images/ser7.jpg" alt="JEANS" class="img-fluid"/></a>
+                                    <div class="ab-info-con">
+                                        <h4>JEANS</h4>
+                                        <a href="Product" class="read-more two btn m-0 px-3"><span class="fa fa-arrow-circle-o-right"> </span></a>
                                     </div>
                                 </div>
                             </div>
@@ -272,7 +282,7 @@ import React  from 'react';
                     </div>		
                 </div>		
             </section>
-            <div style={{paddingTop: "5px"}}></div>
+           
                 <section class="order-sec py-5">
                     <div class="container py-md-5">
                         <div class="test-info text-center">
@@ -285,7 +295,7 @@ import React  from 'react';
                         </div>
                     </div>
                 </section>
-                <div style={{paddingTop: "5px"}}></div>
+                
                 <section class="testimonials py-5" id="testimonials">
                     <div class="container py-md-5">
                            <h3 class="heading text-center mb-3 mb-sm-5">Client Reviews</h3>
@@ -374,7 +384,30 @@ import React  from 'react';
                     </div>
                 </section>
             
-                <div style={{paddingTop: "5px"}}></div>
+       
+            <section class="subscribe" id="subscribe">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5 d-flex subscribe-left p-lg-5 py-sm-5 py-4">
+                            <div class="news-icon mr-3">
+                                <span class="fa fa-paper-plane" aria-hidden="true"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Get Updates<br/></h3>
+                                <h5>Sign up for Greats news and receive 20% off your first purchase</h5> 
+                            </div>
+                        </div>
+                        <div class="col-md-7 subscribe-right p-lg-5 py-sm-5 py-4">
+                            <form action="#" method="post">
+                                <input type="email" name="email" placeholder="Enter your email here" required=""/>
+                                <button  href= "./Login.js" class="btn1"><span class="fa fa-FOOC" aria-hidden="true"></span></button>
+                            </form>
+                            <p>we never share your email with anyone else</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          
                 
             </div>
          )
