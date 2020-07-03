@@ -9,13 +9,14 @@ class Header extends React.Component{
 
       
         return(
+          
             <nav className="navbar navbar-expand-lg bg-dark sticky-top ">
                 <Link to = "/"><div className="navbar-brand logo">
                         THE AUTHENTIC STORE   
                     </div>
                 </Link>
 
-                <ul className="navbar-nav">
+                <ul className="navbar-nav" >
                   <li className="nav-item active ml-2">
                     <Link to ="/">Home</Link>
                   </li>
@@ -42,7 +43,7 @@ class Header extends React.Component{
                   
                   :
                 
-                  <div className="nav-item ml-auto">
+                  <div className="nav-item ml-auto" style={{color:'green'}}>
                   
                     <Link to ="/login">Sign In</Link>&nbsp;
                    
@@ -50,6 +51,7 @@ class Header extends React.Component{
                   
                 }
             </nav>
+         
         )
 
         

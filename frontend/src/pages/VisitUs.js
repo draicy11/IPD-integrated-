@@ -9,16 +9,16 @@ class VisitUs extends React.Component{
         return (
         <div>
           <Jumbotron fluid>
-            <Container>
+            <Container >
             <h1 className="heading text-center mb-3 mb-sm-5">Visit Us</h1>
             <h5 className="heading text-center mb-3 mb-sm-5"> </h5>
-            <p style={{textAlign:"center"}} className="px-lg-5 sub-wthree">
+            <p style={{textAlign:"center"}} className="change">
               At any of the following Stores mentioned Below..
             </p>
             </Container>
           </Jumbotron>
 
-          <Container fluid>
+          <Container fluid  className="cont" >
             <Row style={{paddingTop: "35px"}} className="justify-content-md-center"  >
               <Col style={{marginRight:"15px"}}>
                 <Container style={{paddingTop: "35px"},{paddingBottom:"35px"},{paddingLeft:"35px"},{paddingRight:"35px"}} fluid>

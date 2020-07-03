@@ -23,7 +23,7 @@ import {Link} from 'react-router-dom';
                                         <div className="container">
                                             <h4 className="movetxt agile-title text-capitalize">We Help You Choose the Best Shoes Available In The Market. </h4>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries.</p>
-                                            					
+                                            				
                                         </div>
                                     </div>
                                 </div>
@@ -36,7 +36,7 @@ import {Link} from 'react-router-dom';
                                         <div className="container">
                                         <h2 className="movetxt agile-title text-capitalize">We Create The Best Range Shoes For the Customer</h2>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries.</p>
-                                            	
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -49,7 +49,7 @@ import {Link} from 'react-router-dom';
                                         <div className="container">
                                             <h4 className="movetxt agile-title text-capitalize">We Design Latest Trending Shoes. </h4>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries.</p>
-                                            			
+                                            		
                                         </div>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@ import {Link} from 'react-router-dom';
                     </div>
                 </div>
             </div>
-               
+                
             
                 <section className="services py-5" id="services">
                     <div className="container py-md-5">
@@ -362,8 +362,9 @@ import {Link} from 'react-router-dom';
             
                     </div>
                 </section>
-                <div style={{paddingTop: "5px"}}></div>
-          
+            
+       
+       
                 
             </div>
          )
