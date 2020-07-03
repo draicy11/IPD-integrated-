@@ -1,6 +1,8 @@
 import * as actionTypes from './actionTypes';
 import axios from 'axios';
 import * as actionCart from './cart';
+import { Redirect } from "react-router-dom";
+import React   from 'react';
 
 
 
@@ -43,6 +45,9 @@ export const checkTimeout = expirationTime =>{
 		}, expirationTime * 1000)
 	}
 }
+// const error =(e)=>{
+// 	return<Redirect to="/notfound" />
+// }
 
 export const authLogin = (username , password) =>{
 	return dispatch => {
@@ -70,6 +75,9 @@ export const authLogin = (username , password) =>{
 		.catch(err => {
 			dispatch(authFail(err)); 
 			console.log(err.response);
+			dispatch(error()); 
+			// return<Redirect to="/notfound" />
+			
 		})
 	}
 }
@@ -95,6 +103,7 @@ export const authSignup = (username ,email, password1, password2) =>{
 		})
 		.catch(err => {
 			dispatch(authFail(err))
+			// return <Redirect to="/notfound" />
 		})
 	}
 }
