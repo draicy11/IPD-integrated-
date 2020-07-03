@@ -35,7 +35,7 @@ class About extends Component {
                         </Card>
                     </Col>
                     <Col>
-                        <Card border="dark" bg='light' style={{ width: '18rem' }}>
+                        <Card border="dark" bg='light' style={{ width: '18rem' }} >
                             <Card.Img variant="top" src="./assets/images/3.jpeg"  style={{height:"13rem"}} />
                             <Card.Body>
                                 <Card.Title>Siddharth Bharmoria</Card.Title>

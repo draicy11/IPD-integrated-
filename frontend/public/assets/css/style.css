@@ -75,12 +75,10 @@ ul {
   }
 
 /*-- //header --*/
-.footer-content{
-    font-style: italic;
-}
+
 .align1{
-    left:100%;
-    transform: translate(650%, 13%);
+    
+    transform: translate(580%, 13%);
    
 }
 
@@ -1306,7 +1304,7 @@ hr {
 
 .footer-content h2 a {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: 1px;
     font-weight: 600;
     color: #ffc80a;

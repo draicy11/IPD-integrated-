@@ -8,9 +8,9 @@ const PeopleCard = (props) => {
   const {  image_url, id , name ,price}= props;
 
     return (
-      <Card style={{ width: '18rem' }} key={id} className="shadow bg-white rounded m-2">
+      <Card style={{ width: '17rem' }} border="dark" key={id} className="shadow bg-white rounded m-2">
         <Card.Img variant="top" src={image_url} style={{ height: '12rem' }}/>
-        <Card.Body className="bg-white">
+        <Card.Body className="bg-white"  style={{ height: '35rem' }}>
           <Card.Title className="lead">{name}</Card.Title>
             <Card.Text>{price}</Card.Text>
           <Button variant="primary mr-2" >Buy now</Button>
