@@ -43,7 +43,9 @@ class Footer extends React.Component{
                             </div>
             
                             <p className="copy-right-grids text-li text-center my-sm-4 my-4">© 2020 THE AUTHENTIC STORE. All Rights Reserved | Design by
-                                <a href="./index.html"> <br/> aman negi <br/>  mrinaal lalit  <br/> siddharth  bharmoria<br/></a>
+                            <br/><a href="https://github.com/draicy11">  Aman Negi  </a><br/>
+                                <a href="https://github.com/mrinaal29"> Mrinaal Lalit </a><br/> 
+                                <a href="https://github.com/siddharth-2001"> Siddharth  Bharmoria<br/></a> <br/>
                             </p>              
                             <div className="move-top text-right"><a href="#home" className="move-top"> <span className="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
                         </div>

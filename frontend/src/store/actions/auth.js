@@ -56,16 +56,20 @@ export const authLogin = (username , password) =>{
 		.then(res => {
 			console.log(res);
 			const token = res.data.key;
+			const user = username;
 			const expirationDate = new Date(new Date().getTime() + (2 * 24 * 3600) * 1000);
 			localStorage.setItem('token' , token);
 			localStorage.setItem('expirationDate' , expirationDate);
+			localStorage.setItem('username',user);
 			dispatch(authSuccess(token));
 			dispatch(checkTimeout(2*24*3600));
 			dispatch(actionCart.create_cart(token));
+			
 
 		})
 		.catch(err => {
-			dispatch(authFail(err)) 
+			dispatch(authFail(err)); 
+			console.log(err.response);
 		})
 	}
 }
