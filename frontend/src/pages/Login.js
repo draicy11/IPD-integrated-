@@ -21,6 +21,7 @@ const layout = {
 class Login extends React.Component {
 
   onFinish = values => {
+
     console.log('Received values of form: ', values);
     this.props.onAuth(values.username , values.password);
     this.props.history.push('/');
@@ -37,10 +38,24 @@ class Login extends React.Component {
     }
 
     return (
+<<<<<<< HEAD
           <Container fluid style={{paddingTop: "25px"},{paddingBottom:"35px"},{paddingLeft:"5000px"},{paddingRight:"35px"}} className="login12" >
                 <Avatar className="avatar" style={{backgroundColor:"green"}}>
                 <LockOutlinedIcon />
               </Avatar>
+=======
+       
+      this.props.isAuthenticated ?
+          
+        <Alert variant='danger'>
+          You are already Logged In!!
+        </Alert>
+        
+        :
+
+        <div>
+          <Container fluid style={{paddingTop: "35px"},{paddingBottom:"35px"},{paddingLeft:"5000px"},{paddingRight:"35px"}} className="justify-content-md-center" >
+>>>>>>> master
             <Row  className="justify-content-md-center">
               <Col >
                   <div>
@@ -103,6 +118,8 @@ class Login extends React.Component {
               </Col>
             </Row>
           </Container>
+        </div>
+        
     );
   }
 }
@@ -122,6 +139,10 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login));
 
 
+
+/*
+
+*/

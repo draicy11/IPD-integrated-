@@ -1,5 +1,5 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
+import React ,{ useEffect, useState } from 'react';
+import { Route , Switch} from 'react-router-dom';
 
 import Home from './pages/Home'
 import VisitUs from './pages/VisitUs';
@@ -10,16 +10,21 @@ import Product from './components/Product';
 import ProductDetail from './components/ProductDetail';
 
 
-const BaseRouter = () =>(
+const BaseRouter = (props) =>{
+    return(
+        
 	<div>
-		 <Route exact path='/' component={Home}/>
-         <Route path ='/visitus' component={VisitUs}/>
-         <Route path ='/login' component={Login}/>
-         <Route path ='/about' component={About}/>
-         <Route path ='/signup' component={SignUp}/>
-         <Route path ='/product' component={Product}/>
-         <Route path ='/articles' component={ProductDetail}/>
-</div>
-	);
+        <Switch>
+         <Route exact path='/' component={Home}/>
+         <Route exact path ='/products' component={Product}/>
+         <Route exact path ='/visitus' component={VisitUs}/>
+         <Route exact path ='/login' component={() => <Login isAuthenticated={props.isAuthenticated} history={props.history}/>}/>
+         <Route exact path ='/about' component={About}/>
+         <Route exact path ='/signup' component={SignUp}/>
+         <Route exact path ='/:productId' component={ProductDetail}/>
+        </Switch>		 
+    </div>
+    );
+}
 
 export default BaseRouter;

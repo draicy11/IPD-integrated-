@@ -27,15 +27,17 @@ class Header extends React.Component{
                     <Link to ="/about">About Us</Link>
                   </li>
                   <li className="nav-item ml-2">
-                    <Link to ="/Product">Products</Link>
+                    <Link to ="/products">Products</Link>
                   </li>
                 </ul>
                 {
                     
                   this.props.isAuthenticated ?
                   <div className="nav-item ml-auto">
-                  <Link to ="/login">Cart</Link>&nbsp;&nbsp;&nbsp;
-                  <a className="nav-item ml-auto" style={{color:'lightblue'}} onClick={this.props.logout}>Log Out</a>
+                    {/* <div className="nav-item ml-auto"  style={{color:'white'}} > Welcome, {localStorage.username}</div> */}
+                    <Link to ="/login">Cart</Link>&nbsp;&nbsp;&nbsp;
+                  
+                  <a className="nav-item ml-auto" style={{color:'white'}} onClick={this.props.logout}>Log Out</a>
                   </div>
                   
                   
@@ -64,3 +66,7 @@ const mapDispatchToProps = dispatch => {
 
 
 export default connect(null,mapDispatchToProps)(Header);
+
+{/* <li className="nav-item ml-auto">
+<Link to ="/login">Cart</Link>
+</li> */}

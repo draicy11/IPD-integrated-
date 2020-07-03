@@ -6,7 +6,6 @@ import BaseRouter from './routes';
 
 import Header from './components/Header'
 import Footer from './components/Footer'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { connect } from 'react-redux';
 import * as actions from './store/actions/auth';
@@ -24,7 +23,7 @@ class App extends Component {
       <div >
         <Router>
             <Header {...this.props} />
-            <BaseRouter />
+            <BaseRouter {...this.props} />
             <Footer/>
         </Router>
       </div>

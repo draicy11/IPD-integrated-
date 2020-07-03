@@ -1,8 +1,8 @@
 import React from 'react';
 import {Card,Button } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
-import { connect } from 'react-redux';
-import * as actionsCart from '../store/actions/cart';
+
 
 const PeopleCard = (props) => {
   const {  image_url, id , name ,price}= props;
@@ -13,26 +13,18 @@ const PeopleCard = (props) => {
         <Card.Body className="bg-white"  style={{ height: '35rem' }}>
           <Card.Title className="lead">{name}</Card.Title>
             <Card.Text>{price}</Card.Text>
-          <Button variant="primary mr-2" >Buy now</Button>
-          <Button onClick={props.onCart(props.token,props.id)} variant="success">Add to cart</Button>
+          <Button className="nav-item ml-auto" variant="success mr-2" > <Link style={{color:'white'}} to={"/" + id}>Buy Now</Link></Button>
         </Card.Body>
     </Card>
     );
   }
 
 
-  const mapDispatchToProps = dispatch => {
-    return {
-        onCart: (token , product_id ) => dispatch(actionsCart.addTo_cart(token,product_id))
-         
-    }
-}
-const mapStateToProps = state =>{
-  return {
-    token : state.token,
-  }
-}
 
-  export default connect(mapStateToProps, mapDispatchToProps)(PeopleCard);
 
-  //   
+
+  export default (PeopleCard);
+
+  //   {props.onCart(props.token,props.id)}
+  // props.onCart(props.token,props.id);
+  // connect(mapStateToProps, mapDispatchToProps)
