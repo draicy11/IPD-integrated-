@@ -39,7 +39,7 @@ class ProductDetail extends React.Component{
       handleChange=(e)=>{
       e.preventDefault();
       console.log(this.state);
-      this.props.onCart(this.props.token,this.state.product.id,this.state.clicks);
+      this.props.onCart(this.props.token,this.state.product.id,this.state.clicks,this.state.size);
 
     }
     handleClickXS=(e)=>{
@@ -236,7 +236,7 @@ class ProductDetail extends React.Component{
 
   const mapDispatchToProps = dispatch => {
     return {
-        onCart: (token , product_id , quan ,) => dispatch(actionsCart.addTo_cart(token,product_id,quan))
+        onCart: (token , product_id , quan ,size) => dispatch(actionsCart.addTo_cart(token,product_id,quan,size))
          
     }
 }

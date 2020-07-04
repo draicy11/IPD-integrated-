@@ -11,18 +11,18 @@ export const create_cart = token => {
 		})
 	}
 }	
-export const addTo_cart = (token , product_id, quan) => {
+export const addTo_cart = (token , product_id, quan, size) => {
     return dispatch => {
 		// axios.get(`http://127.0.0.1:8000/api/cart/add/${token}/${product_id}/${quan}/&{size}`)
-		axios.get(`http://127.0.0.1:8000/api/cart/add/${token}/${product_id}/${quan}`)
+		axios.get(`http://127.0.0.1:8000/api/cart/add/${token}/${product_id}/${quan}/${size}`)
 		.then(res=>{
 			
 			alert("Product added successfully to your cart.");
 			console.log("sent");
 		})
 		.catch(err => {
-			alert("Product added successfully to your cart.");
-			
+			alert("Oops ! Something went Wrong.\nCheck if You are logged in.");
+			console.log(err);
 			
 		})
 	}

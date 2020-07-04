@@ -96,16 +96,22 @@ export const authSignup = (username ,email, password1, password2) =>{
         })
 		.then(res => {
 			const token = res.data.key;
+			const user = username;
 			const expirationDate = new Date(new Date().getTime() + (2 * 24 * 3600) * 1000);
 			localStorage.setItem('token' , token);
 			localStorage.setItem('expirationDate' , expirationDate);
+			localStorage.setItem('username',user);
 			dispatch(authSuccess(token));
-			dispatch(checkTimeout(2*24*3600));
+			dispatch(checkTimeout(2*24*3600));			
+			dispatch(actionCart.create_cart(token));
+			console.log(res);
+			alert("You have successfuly Signed Up!!")
 
 		})
 		.catch(err => {
 			dispatch(authFail(err))
-			
+			console.log(err);
+			alert("Oops! Something went wrong!!")
 		})
 	}
 }

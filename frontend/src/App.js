@@ -40,6 +40,7 @@ const mapDispatchToProps = dispatch => {
 const mapStateToProps = state =>{
   return {
     isAuthenticated: state.token !== null,
+    token : state.token
   }
 }
 

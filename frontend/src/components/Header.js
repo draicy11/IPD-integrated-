@@ -6,7 +6,7 @@ import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
 
 class Header extends React.Component{
     render(){
-
+     
 
       
         return(
@@ -36,10 +36,10 @@ class Header extends React.Component{
                   this.props.isAuthenticated ?
                   <div className="ml-auto">
                     
-                    <a href="/login" ><ShoppingCartRoundedIcon id="cart" >Cart</ShoppingCartRoundedIcon></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href={"http://127.0.0.1:8000/api/cart/user/"+ this.props.token +"/details"}><ShoppingCartRoundedIcon id="cart" >Cart</ShoppingCartRoundedIcon></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   
-                  <a className="nav-item ml-auto"  onClick={this.props.logout}>Log Out</a>&nbsp;&nbsp;&nbsp;
-                  <a className="nav-item ml-auto"  href="">Welcome, {localStorage.username}</a>
+                  <Link className="nav-item ml-auto"  onClick={this.props.logout}>Log Out</Link>&nbsp;&nbsp;&nbsp;
+                  <a className="nav-item ml-auto disabled"  >Welcome, {localStorage.username}</a>
                   </div>
                   
                   
