@@ -1,8 +1,7 @@
 import * as actionTypes from './actionTypes';
 import axios from 'axios';
 import * as actionCart from './cart';
-import {  Redirect} from "react-router-dom";
-import React   from 'react';
+
 
 
 
@@ -32,7 +31,6 @@ export const authFail = error => {
 export const logout = () => {
 	localStorage.removeItem('user');
 	localStorage.removeItem('expirationDate');
-	
 	return {
 		type : actionTypes.AUTH_LOGOUT
 	}
@@ -44,23 +42,6 @@ export const checkTimeout = expirationTime =>{
 		setTimeout(() => {
 			dispatch(logout());
 		}, expirationTime * 1000)
-	}
-}
-export const backUser = (username) =>{
-	return dispatch => {
-		axios.get(`http://127.0.0.1:8000/login/${username}/`)
-
-		.then(res => {
-			console.log(res);
-			console.log("BackUser Created");
-
-		})
-		.catch(err => {
-			dispatch(authFail(err)); 
-			console.log(err.response);
-			console.log("BackUser Not Created");
-		})
-		
 	}
 }
 
@@ -84,7 +65,7 @@ export const authLogin = (username , password) =>{
 			dispatch(authSuccess(token));
 			dispatch(checkTimeout(2*24*3600));
 			dispatch(actionCart.create_cart(token));
-			dispatch(backUser(localStorage.username));
+			
 			
 
 		})
@@ -120,7 +101,6 @@ export const authSignup = (username ,email, password1, password2) =>{
 			dispatch(actionCart.create_cart(token));
 			console.log(res);
 			alert("You have successfuly Signed Up!!")
-			dispatch(backUser(localStorage.username));
 		})
 		.catch(err => {
 			dispatch(authFail(err))
