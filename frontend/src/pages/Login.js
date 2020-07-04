@@ -41,9 +41,9 @@ class Login extends React.Component {
     return (
       
       <div style={{paddingTop: "10px"}}>
-      <Card className="shadow bg-white rounded mx-auto" border="#e6e6e6" bg="light"  >
+      <Card className="shadow bg-light moving  mx-auto" border="#e6e6e6" bg="light"  >
         <Card.Body style={{backgroundColor:"#f7f7f7"}}>
-          <Container fluid style={{paddingRight:"32px"}} className="login12" >
+          <Container fluid style={{paddingRight:"32px"}} className="login123" >
                 <Avatar className="avatar" style={{backgroundColor:"green"}}>
                 <LockOutlinedIcon />
               </Avatar>
@@ -99,7 +99,7 @@ class Login extends React.Component {
                               <Button type="primary" htmlType="submit" className="login-form-button">
                                 Log in
                               </Button>
-                              <br/> <a href="/signup"> Don't have an account? Sign Up </a>
+                              <br/> <a href="/signup" style={{fontFamily:"arial"}} > Don't have an account? Sign Up </a>
                             </Form.Item>
                           </Form>
                         </Container>

@@ -10,8 +10,8 @@ const CardList = ({data}) => {
     //     throw new Error('NOOOOOOO!');
     // }
     return (
-        <div className="container-fluid">
-            <div className="row offset-md-1">
+        <div className="container-fluid" >
+            <div className="row offset-md-1" >
             {
             data.map((user,i)=>{
             return (
