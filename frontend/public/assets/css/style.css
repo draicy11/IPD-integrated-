@@ -70,8 +70,18 @@ ul {
 /*-- header --*/
 
   .navbar :hover {
-    color: yellow;
+    color: #e6eaf0;
     
+  }
+  
+  .nav-item:hover, .nav-item:focus{
+    color: #04050c;
+    opacity: 0.5;
+  }
+
+  a #cart:hover path{
+    fill: #03040c;
+    opacity: 0.5;
   }
 
 /*-- //header --*/
@@ -769,14 +779,14 @@ li.breadcrumb-item a {
 
 .ab-content img {
 
-    width: 70%;
+    width: 100%;
 }
 .ab-content1 img {
-    width: 50%;
+    width: 100%;
 }
 .ab-content-inner {
     padding: 2em 1em;
-    background: #fff;
+    background: #e6e6e6;
     text-align: center;
 }
 
@@ -792,7 +802,8 @@ li.breadcrumb-item a {
 }
 span.fa.fa-arrow-circle-o-right {
     font-size: 1.5em;
-    color:#ffc905;
+    color:#44566c;
+    
 }
 /*-- //services --*/
 /*-- /services page --*/
@@ -980,16 +991,17 @@ a.t-icon span {
 }
 .padding h3 {
     margin: 1em 0;
-    color: #ffc905;
+    color: #4b5e65;
+    font-family: "Raleway";
     font-weight: 400;
 }
 .border-dot {
     padding-bottom: 10px;
-    border-bottom: 2px dotted #555;
+    border-bottom: 2px dotted #e6e6e6;
 }
 .menu-item-name h6 {
-    font-size: 16px;
-    text-transform: uppercase;
+    font-size: 14px;
+    
     letter-spacing: 1px;
 }
 .menu-item-price h6 {
@@ -1005,7 +1017,9 @@ a.t-icon span {
 /*-- /order-sec --*/
 
 .order-sec {
-    background: #000;
+    background: #44566c;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
 }
 
 h3.tittle span,
@@ -1018,8 +1032,9 @@ h3.tittle.two span {
 }
 
 h3.tittle.order {
-    font-size: 1.6em;
-    color: #ffc905;
+    font-family:"Arimo";
+    font-size: 2.2em;
+    color: #2f435e;
     font-weight: 600;
 }
 
@@ -1063,8 +1078,8 @@ h4.tittle {
 }
 
 .test-info h3 {
-    font-size: 0.9em;
-    color: #1e272e;
+    font-size: 1.2em;
+    color: #44566c;
     letter-spacing: 1px;
     font-weight: 700;
 }
@@ -1303,7 +1318,7 @@ hr {
 }
 
 .footer-content h2 a {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 1em;
     letter-spacing: 1px;
     font-weight: 600;
@@ -1579,6 +1594,7 @@ p.copy-right-grids {
 }
 h3.heading {
     font-size: 30px;
+    
 }
 .menu-item-name h6 {
     font-size: 14px;

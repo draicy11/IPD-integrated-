@@ -7,11 +7,11 @@ class About extends Component {
             <div>
                 <Jumbotron fluid >
                     <Container>
-                    <h1 className="heading text-center mb-3 mb-sm-5">About Us</h1>
+                    <h1 className="heading text-center mb-3 mb-sm-5" style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder",fontSize: "5em"}}>About Us</h1>
                     <h5 className="heading text-center mb-3 mb-sm-5"> </h5>
                     <p style={{textAlign:"center"}} className="change">
                     This is a project developed by a group of three students. This website's frontend has been 
-                    developed in ReactJS and the backend is developed in Django(Python). Also, the Django REST framework
+                    developed in ReactJS and the backend is developed in Django(Python). Also, the Django REST framework and the Axios API
                     is used to connect the two. 
                     </p>
                     </Container>
@@ -19,15 +19,15 @@ class About extends Component {
                 <Container fluid>
                     <Row style={{paddingTop: "35px"}} className="justify-content-md-center"  >
                         <Col  style={{marginRight:"15px"}}>
-                        <h4 className="heading text-left mb-3 mb-sm-5"> Developer's Team :</h4>
+                        <h4 className="heading text-left mb-3 mb-sm-5" style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder",fontSize: "2em"}}> Developer's Team :</h4>
                         </Col>
                     </Row>
-                    <Row className="align-content-center" className="about-1">
+                    <Row className="align-content-center" >
                     <Col   style={{paddingTop: "35px"},{paddingBottom:"45px"}} >
-                        <Card className="text-center" border="dark" bg='light' style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="./assets/images/2.jpeg" style={{height:"13rem"}} />
-                            <Card.Body>
-                                <Card.Title>Mrinaal Lalit</Card.Title>
+                        <Card className="shadow bg-white rounded m-2" border="#e6e6e6" bg='light' style={{ width: '18rem' }}>
+                            <Card.Img variant="top" src="./assets/images/2.jpeg" style={{height:"20rem"}} />
+                            <Card.Body style={{backgroundColor:"#e6e6e6"}}>
+                                <Card.Title style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder"}}>Mrinaal Lalit</Card.Title>
                                 <Card.Text className="text-font">
                                 Responsible for developing the frontend and UI.
                                 </Card.Text>                           
@@ -35,10 +35,10 @@ class About extends Component {
                         </Card>
                     </Col>
                     <Col>
-                        <Card border="dark" bg='light' style={{ width: '18rem' }} >
-                            <Card.Img variant="top" src="./assets/images/3.jpeg"  style={{height:"13rem"}} />
-                            <Card.Body>
-                                <Card.Title>Siddharth Bharmoria</Card.Title>
+                        <Card className="shadow bg-white rounded m-2" border="#e6e6e6" bg='light' style={{ width: '18rem' }} >
+                            <Card.Img variant="top" src="./assets/images/3.jpeg"  style={{height:"18rem"}} />
+                            <Card.Body style={{backgroundColor:"#e6e6e6"}}>
+                                <Card.Title style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder"}}>Siddharth Bharmoria</Card.Title>
                                 <Card.Text  className="text-font">
                                 Responsible for setting up the server and models for the data.
                                 </Card.Text>                           
@@ -46,10 +46,10 @@ class About extends Component {
                         </Card>
                     </Col>
                     <Col>
-                        <Card border="dark" bg='light' style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="./assets/images/1.jpeg"  />
-                            <Card.Body>
-                                <Card.Title>Aman Negi</Card.Title>
+                        <Card className="shadow bg-white rounded m-2" border="#e6e6e6" bg='light' style={{ width: '18rem' }}>
+                            <Card.Img variant="top" src="./assets/images/1.jpeg"  style={{height:"18rem"}} />
+                            <Card.Body style={{backgroundColor:"#e6e6e6"}}>
+                                <Card.Title style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder"}}>Aman Negi</Card.Title>
                                 <Card.Text  className="text-font">
                                 Responsible for setting up the REST API to connect the frontend and backend.
                                 </Card.Text>                           

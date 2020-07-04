@@ -6,7 +6,7 @@ import VisitUs from './pages/VisitUs';
 import Login from './pages/Login';
 import About from './pages/About';
 import SignUp from './pages/SignUp';
-import NotFound from './pages/NotFound';
+
 import Product from './components/Product';
 import ProductDetail from './components/ProductDetail';
 
@@ -23,7 +23,6 @@ const BaseRouter = (props) =>{
          <Route exact path ='/login' component={() => <Login isAuthenticated={props.isAuthenticated} history={props.history}/>}/>
          <Route exact path ='/about' component={About}/>
          <Route exact path ='/signup' component={SignUp}/>
-         <Route exact path ='/notfound' component={NotFound}/>
          <Route exact path ='/:productId' component={ProductDetail}/>
         </Switch>		 
     </div>

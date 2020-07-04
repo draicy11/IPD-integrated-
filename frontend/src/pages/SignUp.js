@@ -26,7 +26,7 @@ class SignUp extends React.Component {
   render() {
 
     return (
-        <div>
+        <div >
         <Avatar className="avatar1" style={{backgroundColor:"red"}}>
         <LockOutlinedIcon />
       </Avatar>

@@ -5,9 +5,10 @@ import './styless.css';
 import Avatar from '@material-ui/core/Avatar';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import * as actions from '../store/actions/auth';
+import {withRouter} from 'react-router-dom';
 // import * as actionsCart from '../store/actions/cart';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 
 
@@ -30,36 +31,26 @@ class Login extends React.Component {
 
 
   render() {
-    let errorMessage = null;
-    if (this.props.error) {
-        errorMessage = (
-            <h4>{this.props.error.message}</h4>
-        );
-    }
+    // let errorMessage = null;
+    // if (this.props.error) {
+    //     errorMessage = (
+    //         <h4>{this.props.error.message}</h4>
+    //     );
+    // }
 
     return (
-<<<<<<< HEAD
+      
+      <div style={{paddingTop: "10px"}}>
+      <Card className="shadow bg-white rounded mx-auto" border="#e6e6e6" bg="light"  >
+        <Card.Body style={{backgroundColor:"#f7f7f7"}}>
           <Container fluid style={{paddingTop: "25px"},{paddingBottom:"35px"},{paddingLeft:"5000px"},{paddingRight:"35px"}} className="login12" >
                 <Avatar className="avatar" style={{backgroundColor:"green"}}>
                 <LockOutlinedIcon />
               </Avatar>
-=======
-       
-      this.props.isAuthenticated ?
-          
-        <Alert variant='danger'>
-          You are already Logged In!!
-        </Alert>
-        
-        :
-
-        <div>
-          <Container fluid style={{paddingTop: "35px"},{paddingBottom:"35px"},{paddingLeft:"5000px"},{paddingRight:"35px"}} className="justify-content-md-center" >
->>>>>>> master
             <Row  className="justify-content-md-center">
               <Col >
                   <div>
-                      {errorMessage}
+                      
                       {
                           this.props.loading ?
                           
@@ -118,8 +109,10 @@ class Login extends React.Component {
               </Col>
             </Row>
           </Container>
-        </div>
-        
+        </Card.Body>
+      </Card>
+      <div style={{paddingTop: "10px"}}></div>
+      </div>
     );
   }
 }
