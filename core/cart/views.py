@@ -4,6 +4,9 @@ from .models import MyCart
 from .cart import get_user_cart, get_total
 from ast import literal_eval
 from django.contrib.auth.models import User
+from django.contrib.auth import logout
+from django.http import HttpResponse
+
 
 
 def final_cart(request, token):
@@ -22,3 +25,8 @@ def final_cart(request, token):
         'token'    : token
     }
     return render(request, 'cart-detail.html', context)
+
+
+def logout_user(request):
+    logout(request)
+    return HttpResponse('Logged Out successfully')
