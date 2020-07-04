@@ -38,10 +38,17 @@ input:focus,
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
 }
+button {
+    background-color: green;
+}
 </style>
+<div class="container h-100">
+<div class="row justify-content-center">
+    
+    <div class="col-12" >
         <form action="{% url 'charge' user_token %}" method="post" id="payment-form">
             {% csrf_token %}
-            <div class="form-row">
+            <div class="form-column">
                 <input type="text" name="name" placeholder="Enter Full Name"><br>
                 <input type="text" name="email" placeholder="Enter yout Email"><br>
             <label for="card-element">
@@ -56,8 +63,12 @@ input:focus,
             <div id="card-errors" role="alert"></div>
             </div>
         
-            <button>Submit Payment</button>
+            <button class="btn btn-outline-success">Submit Payment</button>
         </form>
+    </div>
+</div>
+</div>
+        
    
    <script>
       // Create a Stripe client.

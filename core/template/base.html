@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://js.stripe.com/v3/"></script>
     <title>{% block title %} {% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&family=Galada&family=Bangers&display=swap" rel="stylesheet">
+  
 </head>
 <body>
     <style>
@@ -16,35 +18,47 @@
         } 
         .navbar {
             box-shadow: 2px 1px 10px darkslategrey;
+            height: 50px;
             background-image: linear-gradient( 290.7deg,  rgba(133,255,159,1) 2.3%, rgba(0,172,249,1) 100.2% );  
+            }
+            nav a {
+                font-weight: 600;	
+                text-transform: capitalize;
+                color: #fff;
+                letter-spacing: 0.5px;
+                font-size: 17px;
+                position: relative;
+                padding: 0.1rem;
+                font-family: 'Bebas Neue', cursive;
+                color:rgb(73, 122, 122);
+                text-decoration: gray;
+            }
+            h1,h2,h3,h4,h5,h6 {
+                font-family: 'Bebas Neue';
             }
     </style>
    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#" style="font-family: Galada; font-size: 30px;">The Authentic Store</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav navbar-center">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Visit Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">About Us</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
           </ul>
         </div>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">welcome, {{user.username}}</a>
-              </li>
-            </ul>
-          </div>
       </nav>  
     {% block content %}
     {% endblock %}

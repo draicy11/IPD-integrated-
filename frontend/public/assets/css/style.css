@@ -469,7 +469,7 @@ nav ul li {
 nav a,nav a:hover {
     font-weight: 600;	
     text-transform: capitalize;
-    color: #fff;
+    color: black;
     letter-spacing: 0.5px;
     font-size: 17px;
     position: relative;
