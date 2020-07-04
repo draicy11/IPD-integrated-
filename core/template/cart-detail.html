@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load custom_tags %}
+
+{% block title%}
+   Cart
+{% endblock %}
+
+{% block content %}
+<div class="row row-cols-1">
+{% for a in items %}
+<div class="col">
+<div class="card mb-3 h-100" style="max-width: 380px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{a.image_url}}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">{{a.name}}</h4>
+        <p class="card-text"><h5>₹ {{a.price}}</h5> Quantity: {{quantity|dict_key:a.name}} <br>Size: {{size|dict_key:a.name}}</p>
+        <a href="{% url 'remove-cart' token a.id %}" class="btn btn-danger active" role="button" aria-pressed="true">Remove</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endfor %}
+</div>
+
+<h1>Your Total: {{ total }}</h1>
+{% endblock %}
+    
+   
+  
