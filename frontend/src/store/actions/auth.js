@@ -46,11 +46,9 @@ export const checkTimeout = expirationTime =>{
 		}, expirationTime * 1000)
 	}
 }
-export const backUser = () =>{
-	return (
-		axios.post('http://127.0.0.1:8000/login', {
-            username: localStorage.username          
-        })
+export const backUser = (username) =>{
+	return dispatch => {
+		axios.get(`http://127.0.0.1:8000/login/${username}/`)
 
 		.then(res => {
 			console.log(res);
@@ -63,7 +61,7 @@ export const backUser = () =>{
 			console.log("BackUser Not Created");
 		})
 		
-	)
+	}
 }
 
 export const authLogin = (username , password) =>{
@@ -86,7 +84,7 @@ export const authLogin = (username , password) =>{
 			dispatch(authSuccess(token));
 			dispatch(checkTimeout(2*24*3600));
 			dispatch(actionCart.create_cart(token));
-			dispatch(backUser());
+			dispatch(backUser(localStorage.username));
 			
 
 		})
@@ -122,7 +120,7 @@ export const authSignup = (username ,email, password1, password2) =>{
 			dispatch(actionCart.create_cart(token));
 			console.log(res);
 			alert("You have successfuly Signed Up!!")
-			dispatch(backUser());
+			dispatch(backUser(localStorage.username));
 		})
 		.catch(err => {
 			dispatch(authFail(err))

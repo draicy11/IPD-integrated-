@@ -12,9 +12,9 @@
 
 ### Activating backend:
 
->cd into .\TheAuthenticStore\core and run the command : "py manage.py runserver".
+>cd into ./TheAuthenticStore/core and run the command : "py manage.py runserver".
 
 
 ### Activating frontend:
 
->cd into .\TheAuthenticStore\frontend and run the command : "npm start".
+>cd into ./TheAuthenticStore/frontend and run the command : "npm start".
