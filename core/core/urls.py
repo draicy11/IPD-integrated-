@@ -8,10 +8,6 @@ urlpatterns = [
     path('rest-auth/', include('rest_auth.urls')),
     path('rest-auth/registration/', include('rest_auth.registration.urls')),
     path('api/cart/', include('cart.urls')),
-<<<<<<< Updated upstream
-    path('api/cart/api/', include('cart.api.urls')),
-=======
     path('', include('payments.urls'))
->>>>>>> Stashed changes
     
 ]
