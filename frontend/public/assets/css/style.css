@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-size: 100%;
     background: #fff;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 
 html {
@@ -17,7 +17,7 @@ body a {
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Bebas Neue', cursive;
 }
 
 body img {
@@ -48,10 +48,12 @@ h5,
 h6 {
     margin: 0;
 	color: #323648;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Bebas Neue', cursive;
 }
 li {
     list-style-type: none;
+    font-family: 'Galada', cursive;
+    color: darkslategrey;
 }
 p {
     margin: 0;
@@ -59,7 +61,7 @@ p {
     line-height: 1.8em;
     letter-spacing: 1px;
     color: #707579;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 
 ul {
@@ -362,6 +364,7 @@ h4.agile-title,h1.agile-title,h2.agile-title {
 }
 .card{
     width:400px;
+    
 }
 .card-img-top{
     width:50px;
@@ -458,9 +461,8 @@ nav ul {
 	
 /* Positioning the navigation items inline */
 nav ul li {
-	margin: 0px;
-
-    font-family: cursive;
+    margin: 0px;
+    
 	}
 
 /* Styling the links */
@@ -472,7 +474,9 @@ nav a,nav a:hover {
     font-size: 17px;
     position: relative;
     padding: 0.1rem;
-    font-family: cursive;
+    font-family: 'Bebas Neue', cursive;
+    color:rgb(73, 122, 122);
+    text-decoration: gray;
 }
 
 /* Background color change on Hover */
@@ -791,7 +795,7 @@ li.breadcrumb-item a {
 }
 
 .services {
-    background: #f7f7f7;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(248,213,214,1) 0%, rgba(243,242,229,1) 90% );
 }
 
 .ab-info-con h4 {
@@ -983,7 +987,7 @@ a.t-icon span {
 /*--//team--*/
 /*-- pricing grids --*/
 .pricing-grids .padding {
-    background: #fff;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(226,240,254,1) 0%, rgba(255,247,228,1) 90% );
     border: 6px solid #f6f6f6;
     padding: 2em 2em;
     position: relative;
@@ -1074,7 +1078,8 @@ h4.tittle {
 /*-- /testimonials --*/
 
 #testimonials {
-    background: rgb(239, 255, 255);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(239,246,249,1) 0%, rgba(206,239,253,1) 90% );
+    
 }
 
 .test-info h3 {

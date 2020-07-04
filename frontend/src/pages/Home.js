@@ -71,7 +71,7 @@ import {Link} from 'react-router-dom';
             
                 <section className="services py-5" id="services" >
                     <div className="container py-md-5">
-                    <h3 className="heading text-center mb-3 mb-sm-5" style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder"}}>Categories</h3>
+                    <h3 className="heading text-center mb-3 mb-sm-5" style={{color:"#44566c",fontWeight:"bolder"}}>Categories</h3>
                         <div className="row ab-info">
                         
                             <div className="col-md-4 ab-content ab-content1">
@@ -110,11 +110,11 @@ import {Link} from 'react-router-dom';
               
                 <section className="pricing py-5">	
                 <div className="container py-md-5">
-                    <h3 className="heading text-capitalize text-center mb-3 mb-sm-5" style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder"}}> Our Pricing</h3>
+                    <h3 className="heading text-capitalize text-center mb-3 mb-sm-5" style={{color:"#44566c",fontWeight:"bolder"}}> Our Pricing</h3>
                     <div className="row pricing-grids">
                         <div className="col-lg-6  mb-lg-0 mb-5">
                             <div className="padding">
-                                 <h3>TRENDING BRANDS</h3>
+                                 <h3 style={{fontFamily: "Bebas Neue"}}>TRENDING BRANDS</h3>
                                 <div className="menu-item">
                                     <div className="row border-dot no-gutters">
                                         <div className="col-8 menu-item-name">
@@ -187,7 +187,7 @@ import {Link} from 'react-router-dom';
                         </div>
                         <div className="col-lg-6  mb-lg-0 mb-5">
                             <div className="padding">
-                                <h3>ON SALE</h3>
+                                <h3 style={{fontFamily: "Bebas Neue"}}>ON SALE</h3>
                                 
                                 <div className="menu-item">
                                     <div className="row border-dot no-gutters">
@@ -267,7 +267,7 @@ import {Link} from 'react-router-dom';
                     <div className="container py-md-5">
                         <div className="test-info text-center">
                             <h3 className="tittle order">
-                                Your favourite footwear, at your doorstep <br/> <b style={{fontFamily:"Arimo",color:"#2f435e",fontWeight:"1000"}}> SELECT, TRY AND BUY </b></h3>
+                                Your favourite footwear, at your doorstep <br/> <b style={{color:"#2f435e",fontWeight:"1000"}}> SELECT, TRY AND BUY </b></h3>
                             <h4 className="tittle my-2">FLAT 50% OFF ON PREPAID ORDERS  </h4>
             
                             <div className="read-more mx-auto m-0 text-center">
@@ -275,10 +275,10 @@ import {Link} from 'react-router-dom';
                         </div>
                     </div>
                 </section>
-                <div style={{paddingTop: "2px"}}></div>
+                <div style={{paddingTop: "2px", backgroundImage: "background-image: linear-gradient( 106.7deg,  rgba(245,167,191,1) -6.2%, rgba(201,218,238,1) 46.4%, rgba(164,240,229,1) 86.4% );"}}></div>
                 <section className="testimonials py-5" id="testimonials">
                     <div className="container py-md-5">
-                           <h3 className="heading text-center mb-3 mb-sm-5" style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder"}}>Client Reviews</h3>
+                           <h3 className="heading text-center mb-3 mb-sm-5" style={{color:"#44566c",fontWeight:"bolder"}}>Client Reviews</h3>
                         <div className="row mt-3">
             
                             <div className="col-md-4 test-grid text-left px-lg-3">

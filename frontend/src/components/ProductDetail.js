@@ -160,20 +160,20 @@ class ProductDetail extends React.Component{
                   <Row>
                   <Col><Image src={this.state.product.image_url} rounded fluid /></Col>
                     <Col style={{paddingLeft: "50px"}}>
-                    <h2  style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder",fontSize: "3em"}}>
+                    <h2  style={{color:"#44566c",fontWeight:"bolder",fontSize: "3em"}}>
                         {this.state.product.name}
                     </h2>
                     <br/>
                     <div className="info">
                       
-                        <h4  style={{fontFamily:"Raleway",color:"#44566c"}}>
+                        <h4  style={{color:"#44566c"}}>
                           Price :
                         </h4>
                         <p style={{fontSize: "2em"}}>
                         ₹ {this.state.product.price}
                         </p>
                         <div  >
-                            <h4 style={{fontFamily:"Raleway",color:"#44566c"}}>Select Size :</h4>
+                            <h4 style={{color:"#44566c"}}>Select Size :</h4>
                             {                    
                             this.state.product.category==="SH" ?
                             <div>
@@ -199,10 +199,10 @@ class ProductDetail extends React.Component{
                             <br/>
                             <div>
                               <br/>                              
-                            <h4 style={{fontFamily:"Raleway",color:"#44566c"}}>Set Quantity :</h4>
+                            <h4 style={{color:"#44566c"}}>Set Quantity :</h4>
                             <br/>
                               <AddCircleOutlineTwoToneIcon style={{fontFamily:"Raleway",color:"#44566c",fontSize:"3em"}} onClick={this.IncrementItem}>Click to increment by 1</AddCircleOutlineTwoToneIcon><br/>
-                              <div style={{fontFamily:"Raleway",color:"#44566c",fontSize:"4em"}}>{"\t"+ this.state.clicks }</div>        
+                              <div style={{fontFamily:"Dosis",color:"#44566c",fontSize:"4em"}}>{"\t"+ this.state.clicks }</div>        
                               <RemoveCircleOutlineOutlinedIcon onClick={this.DecreaseItem} style={{fontFamily:"Raleway",color:"#44566c",fontSize:"3em"}}>Click to decrease by 1</RemoveCircleOutlineOutlinedIcon>
                             </div>
                     
@@ -210,11 +210,11 @@ class ProductDetail extends React.Component{
                         </div>
                         <br/><br/>
                         <div className="buy" >
-                          <Button className="nav-item ml-auto" variant="success mr-2" > <Link style={{color:'white',fontSize:"1.5em"}} onClick={this.handleChange}>Add To Cart</Link></Button>
+                          <Button className="nav-item ml-auto" variant="success mr-2" > <Link style={{color:'white',fontSize:"1.5em" ,fontFamily:'Dosis'}} onClick={this.handleChange}>Add To Cart</Link></Button>
                         </div>
                         <br/>
                         <div className="details">
-                            <h3  style={{fontFamily:"Raleway",color:"#44566c"}}>
+                            <h3  style={{color:"#44566c"}}>
                                 Description :
                             </h3>
                             <p>
