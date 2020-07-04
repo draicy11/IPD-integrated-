@@ -1,8 +1,7 @@
 import * as actionTypes from './actionTypes';
 import axios from 'axios';
 import * as actionCart from './cart';
-import {  Redirect} from "react-router-dom";
-import React   from 'react';
+
 
 
 
@@ -32,7 +31,6 @@ export const authFail = error => {
 export const logout = () => {
 	localStorage.removeItem('user');
 	localStorage.removeItem('expirationDate');
-	dispatch(backUserOut());
 	return {
 		type : actionTypes.AUTH_LOGOUT
 	}

@@ -18,7 +18,7 @@ class ProductDetail extends React.Component{
         product: {},
         quantity:"",
         size:"",
-        clicks: 0,      
+        clicks: 1,      
         }
 
     componentDidMount() {
@@ -141,7 +141,8 @@ class ProductDetail extends React.Component{
       console.log(this.state);
     }
     DecreaseItem = () => {
-      this.setState({ clicks: this.state.clicks - 1 });
+      if(this.state.clicks>1){
+      this.setState({ clicks: this.state.clicks - 1 });}
       console.log(this.state);
     }
 
@@ -201,9 +202,9 @@ class ProductDetail extends React.Component{
                               <br/>                              
                             <h4 style={{color:"#44566c"}}>Set Quantity :</h4>
                             <br/>
-                              <AddCircleOutlineTwoToneIcon style={{fontFamily:"Raleway",color:"#44566c",fontSize:"3em"}} onClick={this.IncrementItem}>Click to increment by 1</AddCircleOutlineTwoToneIcon><br/>
-                              <div style={{fontFamily:"Dosis",color:"#44566c",fontSize:"4em"}}>{"\t"+ this.state.clicks }</div>        
-                              <RemoveCircleOutlineOutlinedIcon onClick={this.DecreaseItem} style={{fontFamily:"Raleway",color:"#44566c",fontSize:"3em"}}>Click to decrease by 1</RemoveCircleOutlineOutlinedIcon>
+                              <AddCircleOutlineTwoToneIcon style={{fontFamily:"Raleway",color:"#44566c",fontSize:"2em"}} onClick={this.IncrementItem}>Click to increment by 1</AddCircleOutlineTwoToneIcon><br/>
+                              <div style={{fontFamily:"Dosis",color:"#44566c",fontSize:"3em"}}>{"\t"+ this.state.clicks }</div>        
+                              <RemoveCircleOutlineOutlinedIcon onClick={this.DecreaseItem} style={{fontFamily:"Raleway",color:"#44566c",fontSize:"2em"}}>Click to decrease by 1</RemoveCircleOutlineOutlinedIcon>
                             </div>
                     
 
