@@ -38,7 +38,7 @@ class Header extends React.Component{
                     
                     <a href={"http://127.0.0.1:8000/api/cart/user/"+ this.props.token +"/details"}><ShoppingCartRoundedIcon id="cart" >Cart</ShoppingCartRoundedIcon></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   
-                  <Link className="nav-item ml-auto"  onClick={this.props.logout}>Log Out</Link>&nbsp;&nbsp;&nbsp;
+                  <Link className="nav-item ml-auto" to="/" onClick={this.props.logout}>Log Out</Link>&nbsp;&nbsp;&nbsp;
                   <a className="nav-item ml-auto disabled"  >Welcome, {localStorage.username}</a>
                   </div>
                   

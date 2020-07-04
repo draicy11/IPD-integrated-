@@ -58,7 +58,9 @@ class VisitUs extends React.Component{
                       </p>
                       <p style={{textAlign:"left"}} className="px-lg-5 sub-wthree">
                         <b style={{color:"#44566c",fontWeight:"bolder"}}>Location:</b><br/>
-                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SCO 435,,<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Near Pheonix Club,<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ambala Cantt.
                       </p>
                       <p style={{textAlign:"left"}} className="px-lg-5 sub-wthree">
                         <b style={{color:"#44566c",fontWeight:"bolder"}}>Open Hours:</b><br/>
