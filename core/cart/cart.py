@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from products.models import Product
 from ast import literal_eval
 from django.http import HttpResponse
+from django.shortcuts import redirect
 
 def create_cart(request,token):
     user=User.objects.get(auth_token=token)
@@ -60,7 +61,7 @@ def remove_from_cart(request, token, product_id):
     cart.quan_data = str(quan_dict)
     cart.save()
     get_total(token)
-    return HttpResponse("Item Removed")
+    return redirect('final-cart', token)
 
 def get_total(token):
     cart= get_user_cart(token)
