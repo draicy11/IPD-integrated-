@@ -175,7 +175,7 @@ class ProductDetail extends React.Component{
                         <div  >
                             <h4 style={{fontFamily:"Raleway",color:"#44566c"}}>Select Size :</h4>
                             {                    
-                            this.state.product.category=="SH" ?
+                            this.state.product.category==="SH" ?
                             <div>
                               <ButtonGroup aria-label="Basic example">
                                 <Button variant="light" onClick={this.handleClick6}>UK 6</Button>
@@ -208,9 +208,9 @@ class ProductDetail extends React.Component{
                     
 
                         </div>
-                        <br/>
+                        <br/><br/>
                         <div className="buy" >
-                          <Button className="nav-item ml-auto" variant="success mr-2" > <Link style={{color:'white'}} onClick={this.handleChange}>Add To Cart</Link></Button>
+                          <Button className="nav-item ml-auto" variant="success mr-2" > <Link style={{color:'white',fontSize:"1.5em"}} onClick={this.handleChange}>Add To Cart</Link></Button>
                         </div>
                         <br/>
                         <div className="details">

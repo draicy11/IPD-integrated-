@@ -43,7 +43,7 @@ class Login extends React.Component {
       <div style={{paddingTop: "10px"}}>
       <Card className="shadow bg-white rounded mx-auto" border="#e6e6e6" bg="light"  >
         <Card.Body style={{backgroundColor:"#f7f7f7"}}>
-          <Container fluid style={{paddingTop: "25px"},{paddingBottom:"35px"},{paddingLeft:"5000px"},{paddingRight:"35px"}} className="login12" >
+          <Container fluid style={{paddingRight:"32px"}} className="login12" >
                 <Avatar className="avatar" style={{backgroundColor:"green"}}>
                 <LockOutlinedIcon />
               </Avatar>

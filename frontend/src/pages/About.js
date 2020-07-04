@@ -23,7 +23,7 @@ class About extends Component {
                         </Col>
                     </Row>
                     <Row className="align-content-center" >
-                    <Col   style={{paddingTop: "35px"},{paddingBottom:"45px"}} >
+                    <Col   style={{paddingBottom:"45px"}} >
                         <Card className="shadow bg-white rounded m-2" border="#e6e6e6" bg='light' style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="./assets/images/2.jpeg" style={{height:"20rem"}} />
                             <Card.Body style={{backgroundColor:"#e6e6e6"}}>
@@ -47,7 +47,7 @@ class About extends Component {
                     </Col>
                     <Col>
                         <Card className="shadow bg-white rounded m-2" border="#e6e6e6" bg='light' style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="./assets/images/1.jpeg"  style={{height:"18rem"}} />
+                            <Card.Img variant="top" src="./assets/images/1.jpg"  style={{height:"18rem"}} />
                             <Card.Body style={{backgroundColor:"#e6e6e6"}}>
                                 <Card.Title style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder"}}>Aman Negi</Card.Title>
                                 <Card.Text  className="text-font">

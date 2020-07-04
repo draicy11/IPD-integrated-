@@ -121,7 +121,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Adidas</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7>Starting from RS 3000</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}>Starting from RS 3000</p>
                                         </div>
                                     </div>
                                     
@@ -133,7 +133,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Reebok</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7>Starting from RS 1800</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}>Starting from RS 1800</p>
                                         </div>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Puma</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7>Starting from RS 1500</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}>Starting from RS 1500</p>
                                         </div>
                                     </div>
                                     
@@ -156,7 +156,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Nike</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7>Starting from RS 4500</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}>Starting from RS 4500</p>
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +167,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Woodland</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7>Starting from RS 3000</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}>Starting from RS 3000</p>
                                         </div>
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Converse</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7> Starting from RS 2500</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}> Starting from RS 2500</p>
                                         </div>
                                     </div>
                                 </div>
@@ -195,7 +195,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Fila</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7>Starting from RS 1700</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}>Starting from RS 1700</p>
                                         </div>
                                     </div>
                                     
@@ -207,7 +207,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Asics</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7> Starting from RS 2100</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}> Starting from RS 2100</p>
                                         </div>
                                     </div>
                                     
@@ -219,7 +219,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Crocs</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7>Starting from RS 1500</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}>Starting from RS 1500</p>
                                         </div>
                                     </div>
                                 </div>
@@ -230,7 +230,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Bata</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7> Starting from RS 1800</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}> Starting from RS 1800</p>
                                         </div>
                                     </div>
                                 </div>
@@ -241,7 +241,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Vans</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7> Starting from RS 3000</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}> Starting from RS 3000</p>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +252,7 @@ import {Link} from 'react-router-dom';
                                             <h6>Numero-Uno</h6>
                                         </div>
                                         <div className="col-4 menu-item-price text-right">
-                                            <h7>Starting from RS 1800</h7>
+                                            <p style={{fontSize:"0.98em",fontWeight:"400"}}>Starting from RS 1800</p>
                                         </div>
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@ import {Link} from 'react-router-dom';
                     <div className="container py-md-5">
                         <div className="test-info text-center">
                             <h3 className="tittle order">
-                                Your favourite footwear, at your doorstep <br/> <h5 style={{fontFamily:"Arimo",color:"#2f435e",fontWeight:"1200"}}> SELECT, TRY AND BUY </h5></h3>
+                                Your favourite footwear, at your doorstep <br/> <b style={{fontFamily:"Arimo",color:"#2f435e",fontWeight:"1000"}}> SELECT, TRY AND BUY </b></h3>
                             <h4 className="tittle my-2">FLAT 50% OFF ON PREPAID ORDERS  </h4>
             
                             <div className="read-more mx-auto m-0 text-center">
@@ -288,7 +288,7 @@ import {Link} from 'react-router-dom';
                                     <h3 className="mt-md-4 mt-3" > Raghav Thakur</h3>
             
                                     <div className="test-img text-center mb-3">
-                                        <img src="./assets/images/test1.jpg" className="img-fluid" alt="user-image"/>
+                                        <img src="./assets/images/test1.jpg" className="img-fluid" alt="user"/>
                                     </div>
                                     
                                 </div>
@@ -299,7 +299,7 @@ import {Link} from 'react-router-dom';
                                     <p>The product is good to see and I hope quality might also good And the shoe is very comfortable to walk it has sponge .So really good and perfect And the product is perfect.</p>
                                     <h3 className="mt-md-4 mt-3" >Raveesh Malhotra</h3>
                                     <div className="test-img text-center mb-3">
-                                        <img src="./assets/images/test2.jpg" className="img-fluid" alt="user-image"/>
+                                        <img src="./assets/images/test2.jpg" className="img-fluid" alt="user"/>
                                     </div>
                                     
                                 </div>
@@ -311,7 +311,7 @@ import {Link} from 'react-router-dom';
                                     <h3 className="mt-md-4 mt-3">Harjot singh Gill</h3>
             
                                     <div className="test-img text-center mb-3">
-                                        <img src="./assets/images/test3.jpg" className="img-fluid" alt="user-image"/>
+                                        <img src="./assets/images/test3.jpg" className="img-fluid" alt="user"/>
                                     </div>
                                     
                                 </div>

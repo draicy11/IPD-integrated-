@@ -21,11 +21,11 @@ class VisitUs extends React.Component{
           <Container fluid  className="cont" >
             <Row style={{paddingTop: "35px"}} className="justify-content-md-center"  >
               <Col style={{marginRight:"15px"}}>
-                <Container style={{paddingTop: "35px"},{paddingBottom:"35px"},{paddingLeft:"35px"},{paddingRight:"35px"}} fluid>
+                <Container  fluid>
                   <Row>
                     <Col >
                       <p style={{textAlign:"center"}} className="px-lg-5 sub-wthree">
-                        <h5 style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder"}}>The Authentic Store , Chandigarh</h5><br/>
+                        <b style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder", fontSize:"1.5em"}}>The Authentic Store , Chandigarh</b><br/><br/>
                         Chandigarh is where it all started for us, so it only made sense to open our first store at our home place.<br/> 
                         Stop by for exclusive drops, merch, events, and great people watching. 
                       </p>
@@ -48,11 +48,11 @@ class VisitUs extends React.Component{
             <Row style={{paddingTop: "70px"}} className="justify-content-md-center">
               <Col><Image src="https://hypebeast.com/image/2014/10/adidas-originals-fashion-space-by-onoma-architects-4.jpg" rounded fluid /></Col>
               <Col>
-                <Container style={{paddingTop: "35px"},{paddingBottom:"35px"},{paddingLeft:"35px"},{paddingRight:"35px"}} fluid>
+                <Container  fluid>
                   <Row>
                     <Col >
                       <p style={{textAlign:"center"}} className="px-lg-5 sub-wthree">
-                        <h5 style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder"}}>The Authentic Store , Ambala</h5><br/>
+                        <b style={{fontFamily:"Arimo",color:"#44566c",fontWeight:"bolder",fontSize:"1.5em"}}>The Authentic Store , Ambala</b><br/><br/>
                         Expanding our reach...We are now available in the city of Ambala. 
                         Stop by for exclusive drops, merch, events, and great people watching. 
                       </p>

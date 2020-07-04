@@ -60,8 +60,8 @@ export default class Product extends React.Component {
             <div>
                 <div className="col-md-6">
                     <form onSubmit={this.handleSubmit} >
-                        <label className="label-check">
-                        Filter By : 
+                        <label className="label-check" style={{fontFamily:"Raleway",color:"#44566c"}}>
+                        Filter By :&nbsp; 
                         <select value={this.state.value} onChange={this.handleChange} >
                             <option value="None">All</option>
                             <option value="JE">Jeans</option>

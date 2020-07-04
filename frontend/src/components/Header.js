@@ -69,6 +69,4 @@ const mapDispatchToProps = dispatch => {
 
 export default connect(null,mapDispatchToProps)(Header);
 
-{/* <li className="nav-item ml-auto">
-<Link to ="/login">Cart</Link>
-</li> */}
+
