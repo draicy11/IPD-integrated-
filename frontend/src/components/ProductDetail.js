@@ -160,7 +160,7 @@ class ProductDetail extends React.Component{
                 <Container style={{paddingTop: "35px",paddingBottom:"35px",paddingLeft:"35px",paddingRight:"35px"}} fluid>
                   <Row>
                   <Col><Image src={this.state.product.image_url} rounded fluid /></Col>
-                    <Col style={{paddingLeft: "50px"}}>
+                    <Col style={{paddingLeft: "50px",paddingTop:"20px",backgroundImage: "radial-gradient( circle farthest-corner at 18.7% 37.8%,  rgba(250,250,250,1) 0%, rgba(225,234,238,1) 90% )"}}>
                     <h2  style={{color:"#44566c",fontWeight:"bolder",fontSize: "3em"}}>
                         {this.state.product.name}
                     </h2>

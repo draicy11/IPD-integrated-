@@ -11,16 +11,16 @@
         <div class="row row-cols-1" style="margin: 30px;">
         {% for a in items %}
         <div class="col">
-        <div class="card mb-3 h-100" style="max-width: 1000px;" >
+        <div class="card mb-3 h-95" style="max-width: 1000px;" >
           <div class="row no-gutters">
             <div class="col-md-4">
-              <img src="{{a.image_url}}" class="card-img" alt="...">
+              <img src="{{a.image_url}}"  class="card-img" alt="...">
             </div>
-            <div class="col-md-8">
-              <div class="card-body"  style="background-image: radial-gradient( circle farthest-corner at 18.7% 37.8%,  rgba(250,250,250,1) 0%, rgba(225,234,238,1) 90% )">
+            <div class="col-md-8" style="background-image: radial-gradient( circle farthest-corner at 18.7% 37.8%,  rgba(250,250,250,1) 0%, rgba(225,234,238,1) 90% )">
+              <div class="card-body"  >
                 <h4 class="card-title">{{a.name}}</h4>
                 <p class="card-text"><h5>₹ {{a.price}}</h5> Quantity: {{quantity|dict_key:a.name}} <br>Size: {{size|dict_key:a.name}}</p>
-                <a href="{% url 'remove-cart' token a.id %}" class="btn btn-danger active" role="button" aria-pressed="true">Remove</a>
+                <a href="{% url 'remove-cart' token a.id %}" class="btn btn-danger button-outline" role="button" aria-pressed="true">Remove</a>
               </div>
             </div>
           </div>
@@ -29,9 +29,13 @@
         {% endfor %}
         </div>
       </div>
-      <div class="col-md-4">
-        <h1>Your Total: {{ total }}</h1>
-        <a href="{% url 'payment' token %}" class="btn btn-success active" role="button" aria-pressed="true">Pay Now</a>
+      <div class="col-md-4" style="padding-top: 35px;">
+        
+        <h1 style="text-align: center; font-family: 'Bebas Neue'; font-size:4em ;">
+          <span style="font-size: 50px;" class="glyphicon glyphicon-shopping-cart"></span>&nbsp;&nbsp;&nbsp;&nbsp;CART
+        </h1><br/>
+        <h2>Your Total:  ₹ {{ total }}</h2><br/>
+        <a href="{% url 'payment' token %}" class="btn btn-success button-outline" role="button" aria-pressed="true" style="font-size: 1.5em;">Pay Now</a>
       </div>
 </div>
 {% endblock %}

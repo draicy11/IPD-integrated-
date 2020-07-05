@@ -41,10 +41,10 @@ class Footer extends React.Component{
             
                             </div>
                             
-                            <p className="copy-right-grids text-li text-center my-sm-4 my-4" style={{color:"#ececec"}}>© 2020 THE AUTHENTIC STORE. All Rights Reserved | Design by
-                            <br/>   <a href="https://github.com/draicy11" style={{color:"#ececec"}}>  Aman Negi</a><br/>
-                                <a href="https://github.com/mrinaal29" style={{color:"#ececec"}}>  Mrinaal Lalit </a><br/>
-                                <a href="https://github.com/siddharth-2001" style={{color:"#ececec"}}> Siddharth  Bharmoria<br/></a><br/>
+                            <p className="copy-right-grids text-li text-center my-sm-4 my-4" style={{color:"#ececec",fontSize:"1em"}}>© 2020 THE AUTHENTIC STORE. All Rights Reserved | Design by
+                            <br/>   <a href="https://github.com/draicy11" style={{color:"#ececec", textDecoration:"none"}}>  Aman Negi</a><br/>
+                                <a href="https://github.com/mrinaal29" style={{color:"#ececec",textDecoration:"none"}}>  Mrinaal Lalit </a><br/>
+                                <a href="https://github.com/siddharth-2001" style={{color:"#ececec",textDecoration:"none"}}> Siddharth  Bharmoria<br/></a><br/>
                             </p>              
                             <div className="move-top text-right"><a href="#" className="move-top"> <span className="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
                         </div>

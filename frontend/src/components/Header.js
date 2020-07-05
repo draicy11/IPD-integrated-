@@ -6,8 +6,6 @@ import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
 
 class Header extends React.Component{
     render(){
-     
-
       
         return(
           
@@ -68,5 +66,3 @@ const mapDispatchToProps = dispatch => {
 
 
 export default connect(null,mapDispatchToProps)(Header);
-
-
