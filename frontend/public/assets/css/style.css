@@ -4,8 +4,9 @@ body {
     margin: 0;
     font-size: 100%;
     background: #fff;
-	font-family: 'Dosis', sans-serif;
-}
+    font-family: 'Dosis', sans-serif;
+    background-image: url('https://trendsoftodaydotcom1.files.wordpress.com/2014/07/3.jpg');
+   }
 
 html {
   scroll-behavior: smooth;
@@ -71,13 +72,9 @@ ul {
 
 /*-- header --*/
 
-  .navbar :hover {
-    color: #e6eaf0;
-    
-  }
-  
+ 
   .nav-item:hover, .nav-item:focus{
-    color: #04050c;
+    color:black;
     opacity: 0.5;
   }
 
@@ -475,7 +472,6 @@ nav a,nav a:hover {
     position: relative;
     padding: 0.1rem;
     font-family: 'Bebas Neue', cursive;
-    color:rgb(73, 122, 122);
     text-decoration: gray;
 }
 
@@ -1078,8 +1074,7 @@ h4.tittle {
 /*-- /testimonials --*/
 
 #testimonials {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(239,246,249,1) 0%, rgba(206,239,253,1) 90% );
-    
+    background-image: linear-gradient( 109.6deg,  rgba(185,212,242,1) 11.2%, rgba(244,210,226,1) 100.3% );    
 }
 
 .test-info h3 {
@@ -1639,4 +1634,3 @@ h3.tittle.order {
 }
 /*-- //Responsive design -    -*/
 /* AA login page css */
-

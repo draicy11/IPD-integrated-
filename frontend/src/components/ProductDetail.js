@@ -211,7 +211,7 @@ class ProductDetail extends React.Component{
                         </div>
                         <br/><br/>
                         <div className="buy" >
-                          <Button className="nav-item ml-auto" variant="success mr-2" > <Link style={{color:'white',fontSize:"1.5em" ,fontFamily:'Dosis'}} onClick={this.handleChange}>Add To Cart</Link></Button>
+                          <Button className="nav-item ml-auto"  variant="success mr-2" > <Link style={{color:'white',fontSize:"1.5em" ,fontFamily:'Dosis'}} onClick={this.handleChange}>Add To Cart</Link></Button>
                         </div>
                         <br/>
                         <div className="details">

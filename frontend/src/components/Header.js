@@ -36,14 +36,14 @@ class Header extends React.Component{
                     
                     <a href={"http://127.0.0.1:8000/api/cart/user/"+ this.props.token +"/details"}><ShoppingCartRoundedIcon id="cart" >Cart</ShoppingCartRoundedIcon></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   
-                  <Link className="nav-item ml-auto" to="/" onClick={this.props.logout}>Log Out</Link>&nbsp;&nbsp;&nbsp;
+                  <Link className="nav-item ml-auto" style = {{backgroundColor: "red", color: "white", borderRadius: "20px", fontColor: "white", padding:"5px"}} to="/" onClick={this.props.logout}>Log Out</Link>&nbsp;&nbsp;&nbsp;
                   <a className="nav-item ml-auto disabled"  >Welcome, {localStorage.username}</a>
                   </div>
                   
                   
                   :
                 
-                  <div className="nav-item ml-auto" >
+                  <div className="nav-item ml-auto" style = {{backgroundColor: "greenyellow", borderRadius: "20px", fontColor: "white", padding:"5px"}} >
                   
                     <Link to ="/login" >Sign In</Link>&nbsp;
                    
