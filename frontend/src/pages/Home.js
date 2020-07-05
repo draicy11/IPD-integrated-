@@ -275,7 +275,7 @@ import {Link} from 'react-router-dom';
                         </div>
                     </div>
                 </section>
-                <div style={{paddingTop: "2px", backgroundImage: "background-image: linear-gradient( 106.7deg,  rgba(245,167,191,1) -6.2%, rgba(201,218,238,1) 46.4%, rgba(164,240,229,1) 86.4% );"}}></div>
+                <div style={{paddingTop: "2px", backgroundImage: "background-image: linear-gradient( 106.7deg,  rgba(245,167,191,1) -6.2%, rgba(201,218,238,1) 46.4%, rgba(164,240,229,1) 86.4% )"}}></div>
                 <section className="testimonials py-5" id="testimonials">
                     <div className="container py-md-5">
                            <h3 className="heading text-center mb-3 mb-sm-5" style={{color:"#44566c",fontWeight:"bolder"}}>Client Reviews</h3>
